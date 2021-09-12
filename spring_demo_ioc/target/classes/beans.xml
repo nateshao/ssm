@@ -24,8 +24,12 @@
 <!--        <constructor-arg name="name" value="kuangshen2"/>-->
 <!--    </bean>-->
     <!-- 第三种根据参数类型设置 -->
-    <bean id="userT" class="com.nateshao.pojo.UserT">
-        <constructor-arg type="java.lang.String" value="kuangshen2"/>
+<!--    <bean id="userT" class="com.nateshao.pojo.UserT">-->
+<!--        <constructor-arg type="java.lang.String" value="kuangshen2"/>-->
+<!--    </bean>-->
+
+    <bean id="student" class="com.nateshao.pojo.Student">
+        <property name="name" value="小明"/>
     </bean>
 
 </beans>

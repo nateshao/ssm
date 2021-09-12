@@ -3,9 +3,6 @@ package com.nateshao.pojo;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import static org.junit.Assert.*;
-
 /**
  * @date Created by 邵桐杰 on 2021/9/12 15:48
  * @微信公众号 千羽的编程时光
