@@ -19,32 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5742f4cb-dc8d-4349-a22e-84f3ab4ed049" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/001-spring-hello/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/001-spring-hello/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/002-spring-ioc/002-spring-ioc.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/002-spring-ioc/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/002-spring-ioc/src/main/java/com/nateshao/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/002-spring-ioc/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/002-spring-ioc/src/test/java/com/nateshao/model/UserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/003-spring-injection/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/003-spring-injection/src/main/java/com/nateshao/dao/InjectionDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/003-spring-injection/src/main/java/com/nateshao/dao/InjectionDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/003-spring-injection/src/main/java/com/nateshao/service/InjectionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/003-spring-injection/src/main/java/com/nateshao/service/InjectionServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/003-spring-injection/src/main/resources/spring-inject.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/003-spring-injection/src/test/java/com/nateshao/TestInjection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ssm-and-boot.iml" afterDir="false" />
-    </list>
+    <list default="true" id="5742f4cb-dc8d-4349-a22e-84f3ab4ed049" name="Default Changelist" comment="Spring-ioc" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,6 +147,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Spring-ioc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring-ioc" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1632396883969">
@@ -198,6 +175,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="154" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1632398411142" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1632401856287">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1632401856287" />
     <state x="540" y="157" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1632396236893">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

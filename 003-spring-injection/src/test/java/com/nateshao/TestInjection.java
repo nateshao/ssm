@@ -1,11 +1,9 @@
 package com.nateshao;
 
-import com.nateshao.dao.InjectionDaoImpl;
 import com.nateshao.service.InjectionServiceImpl;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 /**
  * @date Created by 邵桐杰 on 2021/9/23 19:48
  * @微信公众号 千羽的编程时光
