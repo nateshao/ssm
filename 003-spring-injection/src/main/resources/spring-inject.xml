@@ -3,8 +3,14 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <!--  设值注入  -->
-    <bean id="injectionService01" class="com.nateshao.service.InjectionServiceImpl">
+<!--    &lt;!&ndash;  设值注入  &ndash;&gt;-->
+<!--    <bean id="injectionService01" class="com.nateshao.service.InjectionServiceImpl">-->
+<!--        <property name="InjectionDao" ref="InjectionDao"/>-->
+<!--    </bean>-->
+
+
+    <!--  构造注入  -->
+    <bean id="injectionService02" class="com.nateshao.service.InjectionServiceImpl">
         <property name="InjectionDao" ref="InjectionDao"/>
     </bean>
 

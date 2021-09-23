@@ -1,9 +1,11 @@
 package com.nateshao;
 
+import com.nateshao.service.InjectionService;
 import com.nateshao.service.InjectionServiceImpl;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 /**
  * @date Created by 邵桐杰 on 2021/9/23 19:48
  * @微信公众号 千羽的编程时光
@@ -21,5 +23,14 @@ public class TestInjection {
         service.save("this is save data");
     }
 
+    @Test
+    public void testConstrctor() {
+        this.getService().save("This is save data.");
+    }
 
+    public InjectionServiceImpl getService() {
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-inject.xml");
+        InjectionServiceImpl service = applicationContext.getBean("injectionService02", InjectionServiceImpl.class);
+        return service;
+    }
 }
