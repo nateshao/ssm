@@ -26,4 +26,9 @@ public class App {
         aspectBiz().biz();
     }
 
+    @Test
+    public void testInit() {
+        aspectBiz().init("aspectBiz", 33);
+    }
+
 }

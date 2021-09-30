@@ -25,19 +25,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5742f4cb-dc8d-4349-a22e-84f3ab4ed049" name="Default Changelist" comment="ssm">
-      <change afterPath="$PROJECT_DIR$/003-spring-aop-schema-advise/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/003-spring-aop-schema-advise/src/main/java/com/nateshao/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/003-spring-aop-schema-advise/src/main/java/com/nateshao/aop/schemo/advice/BingerAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/003-spring-aop-schema-advise/src/main/java/com/nateshao/aop/schemo/advice/biz/AspectBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/003-spring-aop-schema-advise/src/main/resources/spring-aop-schema-advice.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/003-spring-aop-schema-advise/src/test/java/com/nateshao/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/001-spring-hello/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/001-spring-hello/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/002-spring-ioc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/002-spring-ioc/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/003-spring-injection/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/003-spring-injection/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/003-spring-aop-schema-advise/src/main/java/com/nateshao/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/003-spring-aop-schema-advise/src/main/java/com/nateshao/App.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +106,7 @@
       <recent name="F:\GitHub--Gitee\ssm\ssm-merge\web" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.App.testBefore">
+  <component name="RunManager" selected="JUnit.App.testInit">
     <configuration name="App (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nateshao.App" />
       <module name="003-spring-injection" />
@@ -130,6 +119,16 @@
       <option name="PACKAGE_NAME" value="com.nateshao" />
       <option name="MAIN_CLASS_NAME" value="com.nateshao.App" />
       <option name="METHOD_NAME" value="testBefore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App.testInit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="003-spring-aop-schema-advise" />
+      <option name="PACKAGE_NAME" value="com.nateshao" />
+      <option name="MAIN_CLASS_NAME" value="com.nateshao.App" />
+      <option name="METHOD_NAME" value="testInit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -150,16 +149,6 @@
       <option name="PACKAGE_NAME" value="com.nateshao" />
       <option name="MAIN_CLASS_NAME" value="com.nateshao.TestInjection" />
       <option name="METHOD_NAME" value="testSetter" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.testUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="002-spring-ioc" />
-      <option name="PACKAGE_NAME" value="com.nateshao.model" />
-      <option name="MAIN_CLASS_NAME" value="com.nateshao.model.UserTest" />
-      <option name="METHOD_NAME" value="testUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -228,17 +217,17 @@
       <item itemvalue="Application.App (2)" />
       <item itemvalue="JUnit.TestInjection.testConstrctor" />
       <item itemvalue="JUnit.TestInjection.testSetter" />
-      <item itemvalue="JUnit.UserTest.testUser" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.24" />
       <item itemvalue="JUnit.App.testBefore" />
+      <item itemvalue="JUnit.App.testInit" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.App.testInit" />
         <item itemvalue="JUnit.App.testBefore" />
         <item itemvalue="Application.App (2)" />
         <item itemvalue="JUnit.TestInjection.testConstrctor" />
         <item itemvalue="JUnit.TestInjection.testSetter" />
-        <item itemvalue="JUnit.UserTest.testUser" />
       </list>
     </recent_temporary>
   </component>
@@ -359,10 +348,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1632986936471" />
-    <state x="-1" y="138" key="Vcs.Push.Dialog.v2" timestamp="1632986287328">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1632992098726">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="-1" y="138" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1632986287328" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1632992098726" />
     <state x="540" y="157" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1632396236893">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
