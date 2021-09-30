@@ -12,6 +12,7 @@
         <module>001-spring-hello</module>
         <module>002-spring-ioc</module>
         <module>003-spring-injection</module>
+        <module>ssm-combine</module>
     </modules>
 
 
