@@ -5,10 +5,10 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.nateshao</groupId>
-  <artifactId>001-spring-hello</artifactId>
+  <artifactId>003-spring-aop-schema-advise</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>001-spring-hello</name>
+  <name>003-spring-aop-schema-advise</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
@@ -28,6 +28,22 @@
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-context</artifactId>
+      <version>5.3.8</version>
+    </dependency>
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.9.6</version>
+    </dependency>
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter</artifactId>
+      <version>RELEASE</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
       <version>5.3.8</version>
     </dependency>
   </dependencies>

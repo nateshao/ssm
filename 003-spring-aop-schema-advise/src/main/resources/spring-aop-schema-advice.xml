@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+    <bean id="bingerAspect" class="com.nateshao.aop.schemo.advice.BingerAspect"></bean>
+    <bean id="aspectBiz" class="com.nateshao.aop.schemo.advice.biz.AspectBiz"></bean>
+
+    <aop:config>
+        <aop:aspect id="bingerAspectAOP" ref="bingerAspect">
+            <aop:pointcut id="bingerPointcut"
+                          expression="execution(* com.nateshao.aop.schemo.advice.biz.*AspectBiz.*(..))"/>
+            <!-- ctrl + shift + insert -->
+            <aop:before method="before" pointcut-ref="bingerPointcut"></aop:before>
+            <aop:after-returning method="afterReturning" pointcut-ref="bingerPointcut"></aop:after-returning>
+            <aop:after-throwing method="afterThrowing" pointcut-ref="bingerPointcut"/>
+            <aop:around method="around" pointcut-ref="bingerPointcut"></aop:around>
+            <aop:around method="aroundInit"
+                        pointcut="execution(* com.nateshao.aop.schemo.advice.biz.AspectBiz.init(String,int ) ) and args(bizName,times)"></aop:around>
+        </aop:aspect>
+    </aop:config>
+</beans>
