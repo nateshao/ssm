@@ -7,11 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ssm-combine" />
         <module name="001-spring-hello" />
         <module name="003-spring-aop-schema-advise" />
-        <module name="ssm-combine" />
-        <module name="003-spring-injection" />
+        <module name="100-spring-hello" />
         <module name="002-spring-ioc" />
+        <module name="003-spring-injection" />
       </profile>
     </annotationProcessing>
   </component>
