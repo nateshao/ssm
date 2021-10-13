@@ -1,0 +1,23 @@
+package com.nateshao.ioc;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * @date Created by 邵桐杰 on 2021/10/13 21:03
+ * @微信公众号 千羽的编程时光
+ * @个人网站 www.nateshao.cn
+ * @博客 https://nateshao.gitee.io
+ * @GitHub https://github.com/nateshao
+ * @Gitee https://gitee.com/nateshao
+ * Description:
+ */
+public class TestIoC {
+    public static void main(String[] args) {
+        ApplicationContext applicationContext =
+                new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserDao userDao = (UserDao) applicationContext.getBean("userDao");
+        userDao.say();
+    }
+
+}

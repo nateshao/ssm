@@ -25,8 +25,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5742f4cb-dc8d-4349-a22e-84f3ab4ed049" name="Default Changelist" comment="ssm">
-      <change afterPath="$PROJECT_DIR$/01-初识Spring的基本应用.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/100-spring-hello/src/main/java/com/nateshao/ioc/TestDI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/100-spring-hello/src/main/java/com/nateshao/ioc/TestIoC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/100-spring-hello/src/main/java/com/nateshao/ioc/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/100-spring-hello/src/main/java/com/nateshao/ioc/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/100-spring-hello/src/main/java/com/nateshao/ioc/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/100-spring-hello/src/main/java/com/nateshao/ioc/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/100-spring-hello/src/main/resources/applicationContext.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/002-spring-ioc/src/main/java/com/nateshao/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/002-spring-ioc/src/main/java/com/nateshao/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/002-spring-ioc/src/test/java/com/nateshao/model/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/002-spring-ioc/src/test/java/com/nateshao/model/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/003-spring-aop-schema-advise/src/main/java/com/nateshao/aop/schemo/advice/BingerAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/003-spring-aop-schema-advise/src/main/java/com/nateshao/aop/schemo/advice/BingerAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/003-spring-aop-schema-advise/src/main/java/com/nateshao/aop/schemo/advice/biz/AspectBiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/003-spring-aop-schema-advise/src/main/java/com/nateshao/aop/schemo/advice/biz/AspectBiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/003-spring-injection/src/main/java/com/nateshao/dao/InjectionDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/003-spring-injection/src/main/java/com/nateshao/dao/InjectionDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/003-spring-injection/src/main/java/com/nateshao/dao/InjectionDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/003-spring-injection/src/main/java/com/nateshao/dao/InjectionDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/003-spring-injection/src/main/java/com/nateshao/service/InjectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/003-spring-injection/src/main/java/com/nateshao/service/InjectionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/003-spring-injection/src/main/java/com/nateshao/service/InjectionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/003-spring-injection/src/main/java/com/nateshao/service/InjectionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/003-spring-injection/src/test/java/com/nateshao/TestInjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/003-spring-injection/src/test/java/com/nateshao/TestInjection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-初识Spring的基本应用.md" beforeDir="false" afterPath="$PROJECT_DIR$/01-初识Spring的基本应用.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/100-spring-hello/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/100-spring-hello/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_demo_ioc/src/main/java/com/nateshao/pojo/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_demo_ioc/src/main/java/com/nateshao/pojo/Address.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_demo_ioc/src/main/java/com/nateshao/pojo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_demo_ioc/src/main/java/com/nateshao/pojo/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_demo_ioc/src/main/java/com/nateshao/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_demo_ioc/src/main/java/com/nateshao/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_demo_ioc/src/main/java/com/nateshao/pojo/UserT.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_demo_ioc/src/main/java/com/nateshao/pojo/UserT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_demo_ioc/src/test/java/com/nateshao/pojo/HelloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_demo_ioc/src/test/java/com/nateshao/pojo/HelloTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_demo_ioc/src/test/java/com/nateshao/pojo/StudentTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_demo_ioc/src/test/java/com/nateshao/pojo/StudentTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring_demo_ioc/src/test/java/com/nateshao/pojo/UserTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring_demo_ioc/src/test/java/com/nateshao/pojo/UserTTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssm-combine/src/main/java/com/nateshao/ssm/controller/UserHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/ssm-combine/src/main/java/com/nateshao/ssm/controller/UserHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssm-combine/src/main/java/com/nateshao/ssm/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/ssm-combine/src/main/java/com/nateshao/ssm/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssm-combine/src/main/java/com/nateshao/ssm/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ssm-combine/src/main/java/com/nateshao/ssm/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssm-combine/src/main/java/com/nateshao/ssm/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ssm-combine/src/main/java/com/nateshao/ssm/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssm-combine/src/main/java/com/nateshao/ssm/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/ssm-combine/src/main/java/com/nateshao/ssm/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +66,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
-        <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -91,13 +120,6 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.nateshao.model" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\GitHub--Gitee\ssm\ssm-combine\src\main\java\com\nateshao\ssm\repository" />
-      <recent name="F:\GitHub--Gitee\ssm\ssm-merge\web" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\GitHub--Gitee\ssm" />
       <recent name="F:\GitHub--Gitee\ssm\ssm-combine\src\main\java" />
@@ -105,11 +127,34 @@
       <recent name="F:\GitHub--Gitee\ssm\ssm-merge\web" />
       <recent name="F:\GitHub--Gitee\ssm\003-spring-injection\src\main\resources" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\GitHub--Gitee\ssm\100-spring-hello\src\main\resources" />
+      <recent name="F:\GitHub--Gitee\ssm\100-spring-hello\src\main" />
+      <recent name="F:\GitHub--Gitee\ssm\ssm-combine\src\main\java\com\nateshao\ssm\repository" />
+      <recent name="F:\GitHub--Gitee\ssm\ssm-merge\web" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.App.testInit">
-    <configuration name="App (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.TestDI">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nateshao.App" />
-      <module name="003-spring-injection" />
+      <module name="100-spring-hello" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestDI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nateshao.ioc.TestDI" />
+      <module name="100-spring-hello" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestIoC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nateshao.ioc.TestIoC" />
+      <module name="100-spring-hello" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,26 +174,6 @@
       <option name="PACKAGE_NAME" value="com.nateshao" />
       <option name="MAIN_CLASS_NAME" value="com.nateshao.App" />
       <option name="METHOD_NAME" value="testInit" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestInjection.testConstrctor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="003-spring-injection" />
-      <option name="PACKAGE_NAME" value="com.nateshao" />
-      <option name="MAIN_CLASS_NAME" value="com.nateshao.TestInjection" />
-      <option name="METHOD_NAME" value="testConstrctor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestInjection.testSetter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="003-spring-injection" />
-      <option name="PACKAGE_NAME" value="com.nateshao" />
-      <option name="MAIN_CLASS_NAME" value="com.nateshao.TestInjection" />
-      <option name="METHOD_NAME" value="testSetter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -214,20 +239,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.App (2)" />
-      <item itemvalue="JUnit.TestInjection.testConstrctor" />
-      <item itemvalue="JUnit.TestInjection.testSetter" />
       <item itemvalue="JUnit.App.testBefore" />
       <item itemvalue="JUnit.App.testInit" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.24" />
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.TestIoC" />
+      <item itemvalue="Application.TestDI" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestDI" />
+        <item itemvalue="Application.TestIoC" />
+        <item itemvalue="Application.App" />
         <item itemvalue="JUnit.App.testInit" />
         <item itemvalue="JUnit.App.testBefore" />
-        <item itemvalue="Application.App (2)" />
-        <item itemvalue="JUnit.TestInjection.testConstrctor" />
-        <item itemvalue="JUnit.TestInjection.testSetter" />
       </list>
     </recent_temporary>
   </component>
@@ -268,10 +293,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="505" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1632970604131" />
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1632967028498">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1634131311577">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1632967028498" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1634131311577" />
     <state x="490" y="50" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1632972149480">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -292,38 +317,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1632998816163" />
-    <state width="1492" height="226" key="GridCell.Tab.0.bottom" timestamp="1634029405800">
+    <state width="1492" height="226" key="GridCell.Tab.0.bottom" timestamp="1634131496628">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="226" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1634029405800" />
-    <state width="1492" height="226" key="GridCell.Tab.0.center" timestamp="1634029405800">
+    <state width="1492" height="226" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1634131496628" />
+    <state width="1492" height="226" key="GridCell.Tab.0.center" timestamp="1634131496628">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="226" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1634029405800" />
-    <state width="1492" height="226" key="GridCell.Tab.0.left" timestamp="1634029405800">
+    <state width="1492" height="226" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1634131496628" />
+    <state width="1492" height="226" key="GridCell.Tab.0.left" timestamp="1634131496628">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="226" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1634029405800" />
-    <state width="1492" height="226" key="GridCell.Tab.0.right" timestamp="1634029405800">
+    <state width="1492" height="226" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1634131496628" />
+    <state width="1492" height="226" key="GridCell.Tab.0.right" timestamp="1634131496628">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="226" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1634029405800" />
-    <state width="1493" height="425" key="GridCell.Tab.1.bottom" timestamp="1632973340471">
+    <state width="1492" height="226" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1634131496628" />
+    <state width="1492" height="261" key="GridCell.Tab.1.bottom" timestamp="1634131409371">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="425" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1632973340471" />
-    <state width="1493" height="425" key="GridCell.Tab.1.center" timestamp="1632973340471">
+    <state width="1492" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1634131409371" />
+    <state width="1492" height="261" key="GridCell.Tab.1.center" timestamp="1634131409371">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="425" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1632973340471" />
-    <state width="1493" height="425" key="GridCell.Tab.1.left" timestamp="1632973340471">
+    <state width="1492" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1634131409371" />
+    <state width="1492" height="261" key="GridCell.Tab.1.left" timestamp="1634131409371">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="425" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1632973340471" />
-    <state width="1493" height="425" key="GridCell.Tab.1.right" timestamp="1632973340471">
+    <state width="1492" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1634131409371" />
+    <state width="1492" height="261" key="GridCell.Tab.1.right" timestamp="1634131409371">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="425" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1632973340471" />
+    <state width="1492" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1634131409371" />
     <state width="1493" height="425" key="GridCell.Tab.2.bottom" timestamp="1632973340471">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -344,10 +369,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1632991852943" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1632986936471">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1634129479148">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1632986936471" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1634129479148" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1634029283877">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -356,10 +381,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="157" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1632396236893" />
-    <state x="468" y="115" width="600" height="594" key="find.popup" timestamp="1632755458280">
+    <state x="468" y="115" width="600" height="594" key="find.popup" timestamp="1634130032334">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="468" y="115" width="600" height="594" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1632755458280" />
+    <state x="468" y="115" width="600" height="594" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1634130032334" />
     <state x="364" y="83" key="new project wizard" timestamp="1634029195881">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -372,9 +397,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1632750879231" />
-    <state x="449" y="95" key="spring file set editor" timestamp="1632987236693">
+    <state x="449" y="95" key="spring file set editor" timestamp="1634130115808">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="95" key="spring file set editor/0.0.1536.824@0.0.1536.824" timestamp="1632987236693" />
+    <state x="449" y="95" key="spring file set editor/0.0.1536.824@0.0.1536.824" timestamp="1634130115808" />
   </component>
 </project>
