@@ -12,6 +12,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/100-spring-ioc-di/pom.xml" />
         <option value="$PROJECT_DIR$/ssm-merge/pom.xml" />
       </set>
     </option>
