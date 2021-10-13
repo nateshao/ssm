@@ -16,8 +16,5 @@
         <module name="102-spring-bean" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="100-spring-hello" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
