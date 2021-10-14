@@ -17,6 +17,8 @@
         <module>100-spring-ioc-di</module>
         <module>102-spring-bean</module>
         <module>101-spring-ioc-di</module>
+        <module>003-spring-aop</module>
+        <module>103-spring-aop</module>
     </modules>
 
 

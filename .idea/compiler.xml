@@ -12,9 +12,13 @@
         <module name="001-spring-hello" />
         <module name="101-spring-ioc-di" />
         <module name="003-spring-aop-schema-advise" />
+        <module name="103-spring-aop" />
         <module name="003-spring-injection" />
         <module name="102-spring-bean" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="003-spring-aop" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
