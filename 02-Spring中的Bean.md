@@ -4,9 +4,11 @@ create by 千羽 2021-10-12
 
 [TOC]
 
-![](https://gitee.com/nateshao/images/raw/master/img/20211013221818.png)
+![](https://gitee.com/nateshao/images/raw/master/img/20211014094258.png)
 
-> https://gitee.com/nateshao/ssm/tree/master/100-spring-hello
+> GitHub：https://github.com/nateshao/ssm/tree/master/102-spring-bean
+>
+> Gitee：https://gitee.com/nateshao/ssm/tree/master/102-spring-bean
 
 ## 1. Bean的配置
 
@@ -270,6 +272,10 @@ public class InstanceTest3 {
 <bean id="scope" class="com.nateshao.scope.Scope" scope=" prototype "/>
 ```
 
+代码实例4：ScopeTest
+
+![](https://gitee.com/nateshao/images/raw/master/img/20211014094608.png)
+
 ## 4. Bean的生命周期
 
 **了解Spring中Bean的生命周期有何意义？**
@@ -300,49 +306,355 @@ Spring容器中Bean的生命周期流程如下图所示；
 2. 创建Spring配置文件beans5.xml，使用2种方式配置Bean; .
 3. 创建测试类，测试程序。
 
-
-
-
+User.java
 
 ```java
-      public User(String username, Integer password, List<String> list) {
-	super();
-    	this.username = username;
-    	this.password = password;
-	this.list = list;
-      } 
-      public User() { super();}
-      ......
-      //省略属性setter方法
-```
+package com.nateshao.assemble;
 
+import java.util.List;
 
-
-```java
-public class XmlBeanAssembleTest {
-          public static void main(String[] args) {
- 	String xmlPath = "com/itheima/assemble/beans5.xml";
-	ApplicationContext applicationContext = 
- 			         new ClassPathXmlApplicationContext(xmlPath);
-                 System.out.println(applicationContext.getBean("user1"));
-                 System.out.println(applicationContext.getBean("user2"));
-      }
+/**
+ * @date Created by 邵桐杰 on 2021/10/14 9:24
+ * @微信公众号 程序员千羽
+ * @个人网站 www.nateshao.cn
+ * @博客 https://nateshao.gitee.io
+ * @GitHub https://github.com/nateshao
+ * @Gitee https://gitee.com/nateshao
+ * Description:
+ */
+public class User {
+    private String username;
+    private int password;
+    private List<String> list;
+    /**
+     * 1.使用构造注入
+     * 1.1提供带所有参数的有参构造方法。
+     */
+    public User(String username, Integer password, List<String> list) {
+        super();
+        this.username = username;
+        this.password = password;
+        this.list = list;
+    }
+    /**
+     * 2.使用设值注入
+     * 2.1提供默认空参构造方法 ;
+     * 2.2为所有属性提供setter方法。
+     */
+    public User() {
+        super();
+    }
+    public void setUsername(String username) {
+        this.username = username;
+    }
+    public void setPassword(Integer password) {
+        this.password = password;
+    }
+    public void setList(List<String> list) {
+        this.list = list;
+    }
+    @Override
+    public String toString() {
+        return "User [username=" + username + ", password=" + password +
+                ", list=" + list + "]";
+    }
 }
 ```
 
-
+beans5.xml
 
 ```xml
-      <bean id="user1" class="com.itheima.assemble.User">
-	     <constructor-arg index="0" value="tom" />
-        ...
-      </bean>
-      <bean id="user2" class="com.itheima.assemble.User">
- 	   <property name=“username” value=“张三”  />
-        ...
-      </bean>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+ 	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<!--1.使用构造注入方式装配User实例 -->
+	<bean id="user1" class="com.nateshao.assemble.User">
+		<constructor-arg index="0" value="tom" />
+		<constructor-arg index="1" value="123456" />
+		<constructor-arg index="2">
+			<list>
+				<value>"constructorvalue1"</value>
+				<value>"constructorvalue2"</value>
+			</list>
+		</constructor-arg>
+	</bean>
+	<!--2.使用设值注入方式装配User实例 -->
+	<bean id="user2" class="com.nateshao.assemble.User">
+		<property name="username" value="张三"></property>
+		<property name="password" value="654321"></property>
+		<!-- 注入list集合 -->
+		<property name="list">
+			<list>
+				<value>"setlistvalue1"</value>
+				<value>"setlistvalue2"</value>
+			</list>
+		</property>
+	</bean>
+</beans>
 ```
+
+XmlBeanAssembleTest.java
+
+```java
+package com.nateshao.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * @date Created by 邵桐杰 on 2021/10/14 9:27
+ * @微信公众号 程序员千羽
+ * @个人网站 www.nateshao.cn
+ * @博客 https://nateshao.gitee.io
+ * @GitHub https://github.com/nateshao
+ * @Gitee https://gitee.com/nateshao
+ * Description:
+ */
+public class XmlBeanAssembleTest {
+    public static void main(String[] args) {
+        // 定义配置文件路径
+        String xmlPath = "beans5.xml";
+        // ApplicationContext在加载配置文件时，对Bean进行实例化
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
+        System.out.println(applicationContext.getBean("user1"));
+        System.out.println(applicationContext.getBean("user2"));
+
+    }
+}
+```
+
+运行结果：
+
+![](https://gitee.com/nateshao/images/raw/master/img/20211014094655.png)
+
+
+
+### 基于Annotation的装配
+
+> 基于XML的装配可能会导致XML配置文件过于臃肿，给后续的维护和升级带来一定的困难。为此，Spring提供了对Annotation（注解）技术的全面支持。
+
+**主要注解**
+
+1. **@Component**：用于描述Spring中的Bean，它是一个泛化的概念，仅仅表示一个组件。
+2. **@Repository**：用于将数据访问层（DAO）的类标识为Spring中的Bean 。
+3. **@Service**：用于将业务层（Service）的类标识为Spring中的Bean。
+4. **@Controller**：用于将控制层（Controller）的类标识为Spring中的Bean 。
+5. **@Autowired**：用于对Bean的属性变量、属性的setter方法及构造方法进行标注，配合对应的注解处理器完成Bean的自动配置工作。
+6. **@Resource**：其作用与Autowired一样。@Resource中有两个重要属性：name和type。Spring将name属性解析为Bean实例名称，type属性解析为Bean实例类型。
+7. **@Qualifier**：与@Autowired注解配合使用，会将默认的按Bean类型装配修改为按Bean的实例名称装配，Bean的实例名称由@Qualifier注解的参数指定。
+
+**基于Annotation装配的使用方式如下：**
+
+1. 创建接口UserDao,并定义方法；
+2. 创建接口实现类UserDaoImpl,用@Repository 声明类; 
+3. 创建接口UserService,并定义方法;
+4. 创建接口实现类UserServiceImpl,用@Service声明类，
+5. 并使用@Resource注入UserDao属性;
+6. 创建控制器类，用@Controller声明，并使用@Resource
+7. 注入UserService属性;
+8. 创建Spring配置文件，配置Bean; 
+9. 创建测试类，测试程序。
+
+**UserDao.java**
+
+```java
+public interface UserDao {
+    public void save();
+}
+```
+
+**UserDaoImpl.java**
+
+```java
+package com.nateshao.annotation;
+
+import org.springframework.stereotype.Repository;
+
+/**
+ * @date Created by 邵桐杰 on 2021/10/14 10:12
+ * @微信公众号 程序员千羽
+ * @个人网站 www.nateshao.cn
+ * @博客 https://nateshao.gitee.io
+ * @GitHub https://github.com/nateshao
+ * @Gitee https://gitee.com/nateshao
+ * Description:
+ */
+@Repository
+public class UserDaoImpl implements UserDao{
+    @Override
+    public void save() {
+        System.out.println("userdao...save...");
+    }
+}
+```
+
+**UserService.java**
+
+```java
+public interface UserService {
+    public void save();
+}
+```
+
+**UserServiceImpl.java**
+
+```java
+package com.nateshao.annotation;
+
+import org.springframework.stereotype.Service;
+import javax.annotation.Resource;
+/**
+ * @date Created by 邵桐杰 on 2021/10/14 10:14
+ * @微信公众号 程序员千羽
+ * @个人网站 www.nateshao.cn
+ * @博客 https://nateshao.gitee.io
+ * @GitHub https://github.com/nateshao
+ * @Gitee https://gitee.com/nateshao
+ * Description:
+ */
+@Service("userService")
+public class UserServiceImpl implements UserService{
+    @Resource(name="userDao")
+    private UserDao userDao;
+
+    @Override
+    public void save() {
+        //调用userDao中的save方法
+        this.userDao.save();
+        System.out.println("userservice....save...");
+    }
+    public void setUserDao(UserDao userDao) {
+        this.userDao = userDao;
+    }
+}
+```
+
+**UserController.java**
+
+```java
+package com.nateshao.annotation;
+
+import org.springframework.stereotype.Controller;
+import javax.annotation.Resource;
+/**
+ * @date Created by 邵桐杰 on 2021/10/14 10:17
+ * @微信公众号 程序员千羽
+ * @个人网站 www.nateshao.cn
+ * @博客 https://nateshao.gitee.io
+ * @GitHub https://github.com/nateshao
+ * @Gitee https://gitee.com/nateshao
+ * Description:
+ */
+@Controller("userController")
+public class UserController {
+    
+    @Resource(name="userService")
+    private UserService userService;
+    
+    public void save(){
+        this.userService.save();
+        System.out.println("userController...save...");
+    }
+
+    public void setUserService(UserService userService) {
+        this.userService = userService;
+    }
+}
+```
+
+**beans.xml**
+
+```java
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+      xmlns:context="http://www.springframework.org/schema/context"
+      xsi:schemaLocation="http://www.springframework.org/schema/beans 
+      http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+      http://www.springframework.org/schema/context 
+  http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+ <!-- 使用 context 命名空间 ,在配置文件中开启相应的注解处理器 -->
+	  <context:annotation-config />
+	 <!--分别定义3个Bean实例  -->
+       <bean id="userDao" class="com.nateshao.annotation.UserDaoImpl" />
+      <bean id="userService" class="com.nateshao.annotation.UserServiceImpl" />
+      <bean id="userController" class="com.nateshao.annotation.UserController" />
+</beans>
+```
+
+<img src="https://gitee.com/nateshao/images/raw/master/img/20211014103241.png" style="zoom:80%;" />
+
+**AnnotationAssembleTest.java**
+
+```java
+package com.nateshao.test;
+
+import com.nateshao.annotation.UserController;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * @date Created by 邵桐杰 on 2021/10/14 10:20
+ * @微信公众号 程序员千羽
+ * @个人网站 www.nateshao.cn
+ * @博客 https://nateshao.gitee.io
+ * @GitHub https://github.com/nateshao
+ * @Gitee https://gitee.com/nateshao
+ * Description:
+ */
+public class AnnotationAssembleTest {
+    public static void main(String[] args) {
+        // 定义配置文件路径
+        String xmlPath = "beans6.xml";
+        // 加载配置文件
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
+        // 获取UserController实例
+        UserController userController = (UserController) applicationContext.getBean("userController");
+        // 调用UserController中的save()方法
+        userController.save();
+    }
+}
+```
+
+![](https://gitee.com/nateshao/images/raw/master/img/20211014102456.png)
+
+**小提示：** 除了可以像示例中通过< bean >元素来配置Bean外，还可以通过包扫描的形式来配置一个包下的所有Bean：
+
+```xml
+<context:component-scan base-package="com.nateshao.annotation" />
+```
+
+###      自动装配
+
+>  所谓自动装配，就是将一个Bean自动的注入到到其他Bean的Property中。 Spring的<bean>元素中包含一个autowire属性，我们可以通过设置autowire的属性值来自动装配Bean。autowire属性有5个值，其值及说明下表所示：
+
+![](https://gitee.com/nateshao/images/raw/master/img/20211014102707.png)
+
+自动装配，使用方式如下：
+
+1. 修改上一节UserServiceImple和UserController,分别增加类属性的setter方法;
+2. 修改Spring配置文件，使用autowire属性配置Bean;
+3. 重新测试程序。
+
+```xml
+<bean id="userDao" class="com.nateshao.annotation.UserDaoImpl" />
+<bean id="userService" class="com.nateshao.annotation.UserServiceImpl" autowire="byName" />
+<bean id="userController" class="com.nateshao.annotation.UserController" autowire="byName" />
+```
+
+<img src="https://gitee.com/nateshao/images/raw/master/img/20211014103354.png" style="zoom:80%;" />
+
+
+
+
+
+
+
+
+
+
 
 
 

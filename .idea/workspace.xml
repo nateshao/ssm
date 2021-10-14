@@ -25,13 +25,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5742f4cb-dc8d-4349-a22e-84f3ab4ed049" name="Default Changelist" comment="ssm">
-      <change afterPath="$PROJECT_DIR$/02-Bean的生命 周期管理.xmind" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/102-spring-bean/src/main/java/com/nateshao/scope/Scope.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/102-spring-bean/src/main/java/com/nateshao/test/ScopeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/102-spring-bean/src/main/resources/beans4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/02-Spring中的Bean.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/102-spring-bean/src/main/java/com/nateshao/annotation/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/102-spring-bean/src/main/java/com/nateshao/annotation/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/102-spring-bean/src/main/java/com/nateshao/annotation/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/102-spring-bean/src/main/java/com/nateshao/annotation/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/102-spring-bean/src/main/java/com/nateshao/annotation/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/102-spring-bean/src/main/java/com/nateshao/assemble/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/102-spring-bean/src/main/java/com/nateshao/test/AnnotationAssembleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/102-spring-bean/src/main/java/com/nateshao/test/XmlBeanAssembleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/102-spring-bean/src/main/resources/beans5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/102-spring-bean/src/main/resources/beans6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Spring中的Bean.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-初识Spring的基本应用.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/01-初识Spring的基本应用.xmind" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/02-Spring中的Bean.md" beforeDir="false" afterPath="$PROJECT_DIR$/02-Spring中的Bean.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/100-spring-ioc-di/target/classes/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/100-spring-ioc-di/target/classes/com/nateshao/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/100-spring-ioc-di/target/classes/com/nateshao/ioc/TestDI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/100-spring-ioc-di/target/classes/com/nateshao/ioc/TestIoC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/100-spring-ioc-di/target/classes/com/nateshao/ioc/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/100-spring-ioc-di/target/classes/com/nateshao/ioc/UserDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/100-spring-ioc-di/target/classes/com/nateshao/ioc/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/100-spring-ioc-di/target/classes/com/nateshao/ioc/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/100-spring-ioc-di/target/test-classes/com/nateshao/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/102-spring-bean/src/main/resources/beans4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/102-spring-bean/src/main/resources/beans4.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +60,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
-        <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -116,9 +134,9 @@
       <recent name="com.nateshao.instance.factory" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ScopeTest">
-    <configuration name="InstanceTest1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nateshao.test.InstanceTest1" />
+  <component name="RunManager" selected="Application.AnnotationAssembleTest">
+    <configuration name="AnnotationAssembleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nateshao.test.AnnotationAssembleTest" />
       <module name="102-spring-bean" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -145,9 +163,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nateshao.ioc.TestDI" />
-      <module name="101-spring-ioc-di" />
+    <configuration name="XmlBeanAssembleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nateshao.test.XmlBeanAssembleTest" />
+      <module name="102-spring-bean" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -212,20 +230,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.TestDI" />
-      <item itemvalue="Application.InstanceTest1" />
       <item itemvalue="Application.InstanceTest2" />
       <item itemvalue="Application.InstanceTest3" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.24" />
       <item itemvalue="Application.ScopeTest" />
+      <item itemvalue="Application.XmlBeanAssembleTest" />
+      <item itemvalue="Application.AnnotationAssembleTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AnnotationAssembleTest" />
+        <item itemvalue="Application.XmlBeanAssembleTest" />
         <item itemvalue="Application.ScopeTest" />
         <item itemvalue="Application.InstanceTest3" />
         <item itemvalue="Application.InstanceTest2" />
-        <item itemvalue="Application.InstanceTest1" />
-        <item itemvalue="Application.TestDI" />
       </list>
     </recent_temporary>
   </component>
@@ -266,10 +284,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="505" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1632970604131" />
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1634131311577">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1634177703012">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1634131311577" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1634177703012" />
     <state x="490" y="50" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1632972149480">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -290,22 +308,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1632998816163" />
-    <state width="1492" height="261" key="GridCell.Tab.0.bottom" timestamp="1634138746697">
+    <state width="1492" height="226" key="GridCell.Tab.0.bottom" timestamp="1634178108968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1634138746697" />
-    <state width="1492" height="261" key="GridCell.Tab.0.center" timestamp="1634138746697">
+    <state width="1492" height="226" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1634178108968" />
+    <state width="1492" height="226" key="GridCell.Tab.0.center" timestamp="1634178108968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1634138746697" />
-    <state width="1492" height="261" key="GridCell.Tab.0.left" timestamp="1634138746696">
+    <state width="1492" height="226" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1634178108968" />
+    <state width="1492" height="226" key="GridCell.Tab.0.left" timestamp="1634178108968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1634138746696" />
-    <state width="1492" height="261" key="GridCell.Tab.0.right" timestamp="1634138746697">
+    <state width="1492" height="226" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1634178108968" />
+    <state width="1492" height="226" key="GridCell.Tab.0.right" timestamp="1634178108968">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1634138746697" />
+    <state width="1492" height="226" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1634178108968" />
     <state width="1492" height="261" key="GridCell.Tab.1.bottom" timestamp="1634138746697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -346,10 +364,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1634138614771" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1634138653368">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1634174595447">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1634138653368" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1634174595447" />
     <state x="540" y="157" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1632396236893">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -370,9 +388,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1632750879231" />
-    <state x="449" y="95" key="spring file set editor" timestamp="1634174447112">
+    <state x="449" y="95" key="spring file set editor" timestamp="1634177439910">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="95" key="spring file set editor/0.0.1536.824@0.0.1536.824" timestamp="1634174447112" />
+    <state x="449" y="95" key="spring file set editor/0.0.1536.824@0.0.1536.824" timestamp="1634177439910" />
   </component>
 </project>
