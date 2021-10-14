@@ -234,13 +234,133 @@ public class InstanceTest3 {
 
 ## 3. Bean的作用域
 
+**作用域的种类**
 
+​     Spring 4.3中为Bean的实例定义了7种作用域，如下表所示：
+
+<img src="https://gitee.com/nateshao/images/raw/master/img/20211014080458.png" style="zoom:80%;" />
+
+**注意：**在上表7种作用域中，`singleton`和`prototype`是最常用的两种作用域。
+
+### singleton作用域
+
+​    `singleton`是`Spring`容器默认的作用域，当`Bean`的作用域为`singleton`时，`Spring`容器就只会存在一个共享的`Bean`实例。`singleton`作用域对于无会话状态的`Bean`（如Dao 组件、Service组件）来说，是最理想的选择。
+
+​    在`Spring`配置文件中，可以使用< bean >元素的`scope`属性，将`Bean`的作用域定义成`singleton`。
+
+ **在Spring中如何配置singleton作用域?**
+
+比如
+
+```xml
+<bean id="scope" class="com.nateshao.scope.Scope" scope="singleton"/>
+```
+
+### prototype作用域
+
+​    对需要保持会话状态的Bean（如Struts 2的Action类）应该使用prototype作用域。在使用prototype作用域时，Spring容器会为每个对该Bean的请求都创建一个新的实例。
+
+​    在Spring配置文件中，同样使用< bean>元素的scope属性，将Bean的作用域定义成prototype 。
+
+**在Spring中如何配置prototype作用域?**
+
+比如
+
+```xml
+<bean id="scope" class="com.nateshao.scope.Scope" scope=" prototype "/>
+```
 
 ## 4. Bean的生命周期
 
+**了解Spring中Bean的生命周期有何意义？**
 
+>    了解Spring中Bean的生命周期的意义就在于，可以利用Bean在其存活期间的特定时刻完成一些相关操作。这种时刻可能有很多，但一般情况下，常会在Bean的postinitiation(初始化后)和predestruction（销毁前）执行一些相关操作。
+
+​    Spring容器可以管理Bean部分作用域的生命周期。有关说明具体如下：
+
+<img src="https://gitee.com/nateshao/images/raw/master/img/20211014082154.png" style="zoom:80%;" />
+
+Spring容器中Bean的生命周期流程如下图所示；
+
+![](https://gitee.com/nateshao/images/raw/master/img/20211014082404.png)
 
 ## 5. Bean的装配方式
+
+**什么是Bean的装配？**
+
+> Bean的装配可以理解为依赖关系注入，Bean的装配方式即Bean依赖注入的方式。Spring容器支持多种形式的Bean的装配方式，如基于XML的装配、基于注解（Annotation）的装配和自动装配（其中**最常用的是基于注解的装配**），本节将主要讲解这三种装配方式的使用。
+
+### 基于XML的装配
+
+<img src="https://gitee.com/nateshao/images/raw/master/img/20211014082618.png" style="zoom:80%;" />
+
+基于XML的装配，使用方式如下：
+
+1. 创建Java类，提供有参、无参构造以及属性setter方法;
+2. 创建Spring配置文件beans5.xml，使用2种方式配置Bean; .
+3. 创建测试类，测试程序。
+
+
+
+
+
+```java
+      public User(String username, Integer password, List<String> list) {
+	super();
+    	this.username = username;
+    	this.password = password;
+	this.list = list;
+      } 
+      public User() { super();}
+      ......
+      //省略属性setter方法
+```
+
+
+
+```java
+public class XmlBeanAssembleTest {
+          public static void main(String[] args) {
+ 	String xmlPath = "com/itheima/assemble/beans5.xml";
+	ApplicationContext applicationContext = 
+ 			         new ClassPathXmlApplicationContext(xmlPath);
+                 System.out.println(applicationContext.getBean("user1"));
+                 System.out.println(applicationContext.getBean("user2"));
+      }
+}
+```
+
+
+
+```xml
+      <bean id="user1" class="com.itheima.assemble.User">
+	     <constructor-arg index="0" value="tom" />
+        ...
+      </bean>
+      <bean id="user2" class="com.itheima.assemble.User">
+ 	   <property name=“username” value=“张三”  />
+        ...
+      </bean>
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
