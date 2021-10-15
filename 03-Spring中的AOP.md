@@ -4,478 +4,59 @@ create by 千羽 2021-10-12
 
 [TOC]
 
+> GitHub：https://github.com/nateshao/ssm/tree/master/103-spring-aop
+>
+> Gitee：https://gitee.com/nateshao/ssm/tree/master/103-spring-aop
+
 ![](https://gitee.com/nateshao/images/raw/master/img/20211014104629.png)
 
-<img src="https://gitee.com/nateshao/images/raw/master/img/20211014104904.png" style="zoom:80%;" />
+![](https://gitee.com/nateshao/images/raw/master/img/20211014202044.png)
 
-> GitHub：https://github.com/nateshao/ssm/tree/master/102-spring-bean
->
-> Gitee：https://gitee.com/nateshao/ssm/tree/master/102-spring-bean
+## 1. Spring AOP简介
 
-## 1. Bean的配置
+**什么是AOP？**
 
-**什么是Spring中的Bean？**
+> AOP的全称是Aspect-Oriented Programming，即面向切面编程（也称面向方面编程）。它是面向对象编程（OOP）的一种补充，目前已成为一种比较成熟的编程方式。
 
-> 如果把Spring看做一个大型工厂，则Spring容器中的Bean就是该工厂的产品。要想使用这个工厂生产和管理Bean，就需要在配置文件中告诉它需要哪些Bean，以及需要使用何种方式将这些Bean装配到一起。
+  在传统的业务处理代码中，通常都会进行**事务处理、日志记录**等操作。虽然使用OOP可以通过组合或者继承的方式来达到代码的重用，但如果要实现某个功能（如日志记录），同样的代码仍然会分散到各个方法中。这样，如果想要关闭某个功能，或者对其进行修改，就必须要修改所有的相关方法。这不但增加了开发人员的工作量，而且提高了代码的出错率。
 
-**小提示：** Bean的本质就是Java中的类，而Spring中的Bean其实就是对实体类的引用，来生产Java类对象，从而实现生产和管理Bean 。
+​     为了解决这一问题，AOP思想随之产生。AOP采取**横向抽取机制**，将分散在各个方法中的**重复代码提取出来**，然后在程序编译或运行时，再将这些提取出来的代码应用到**需要执行的地方**。这种采用横向抽取机制的方式，采用传统的OOP思想显然是无法办到的，因为OOP只能实现父子关系的纵向的重用。虽然AOP是一种新的编程思想，但却**不是OOP的替代品**，它只是**OOP的延伸和补充**。
 
-<img src="https://gitee.com/nateshao/images/raw/master/img/20211013222640.png" style="zoom: 50%;" />
+**类与切面的关系**
 
-  *在实际开发中，最常使用的是XML文件格式的配置方式，这种配置方式是通过XML文件来注册并管理Bean之间的依赖关系。*
+<img src="https://gitee.com/nateshao/images/raw/master/img/20211014115136.png" style="zoom:80%;" />
 
-​    XML配置文件的根元素是< beans >，< beans >中包含了多个< bean >子元素，每一个< bean >子元素定义了一个Bean，并描述了该Bean如何被装配到Spring容器中。关于< beans >元素的常用属性如下表所示：
+​    AOP的使用，使开发人员在编写业务逻辑时可以专心于核心业务，而不用过多的关注于其他业务逻辑的实现，这不但提高了开发效率，而且增强了代码的可维护性。
 
-<img src="https://gitee.com/nateshao/images/raw/master/img/20211013222816.png" style="zoom:80%;" />
+<img src="https://gitee.com/nateshao/images/raw/master/img/20211014175438.png" style="zoom:80%;" />
 
-​    在配置文件中，通常一个普通的Bean只需要定义id（或name）和class 两个属性即可，定义Bean的方式如下所示：
+- Proxy（代理）：将通知应用到目标对象之后，被动态创建的对象。
+- Weaving（织入）：将切面代码插入到目标对象上，从而生成代理对象的过程。
 
-```xml
-    <?xml version="1.0" encoding="UTF-8"?>
-    <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans 
-	http://www.springframework.org/schema/beans/spring-beans.xsd">
-            <bean id="bean1" class="com.nateshao.Bean1" />
-            <bean name="bean2" class="com.nateshao.Bean2" />
-    </beans>
-```
+## 2. 动态代理
 
-**小提示：**如果在Bean中未指定id和name，则Spring会将class值当作id使用。
+## jdk动态代理
 
-## 2. Bean的实例化
-
-**Bean的实例化有哪些方式？**
-
->   在面向对象的程序中，想要使用某个对象，就需要先实例化这个对象。同样，在Spring中，要想使用容器中的Bean，也需要实例化Bean。实例化Bean有三种方式，分别为**构造器实例化、静态工厂方式实例化和实例工厂方式实例化（其中最常用的是构造器实例化）。** 
-
-### 构造器实例化
-
-> 构造器实例化是指Spring容器通过Bean对应的类中默认的构造函数来实例化Bean。接下来演示构造器实例化的使用:
-
-1. 创建Web项目，导入相关maven包;
-2. 创建名为Beanl的Java类;
-3. 创建Spring配置文件beans 1.xml，并配置Beanl实体类Bean;
-
-Bean1.java
-
-```java
-public class Bean1 {
-}
-```
-
-   InstanceTest1.java
-
-```java
-public class InstanceTest1 {
-       public static void main(String[] args) {
-     	String xmlPath = "beans1.xml";
-               ApplicationContext applicationContext = 
-			    new ClassPathXmlApplicationContext(xmlPath);
-	Bean1 bean = (Bean1) applicationContext.getBean("bean1");
-                System.out.println(bean);
-      }
-}
-```
-
-beans1.xml
-
-
-```java
-    <?xml version="1.0" encoding="UTF-8"?>
-    <beans xmlns="http://www.springframework.org/schema/beans"
- 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 	xsi:schemaLocation="http://www.springframework.org/schema/beans 
-  	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
-           <bean id="bean1" class="com.nateshao.instance.constructor.Bean1" />
-    </beans>
-
-```
-
-![](https://gitee.com/nateshao/images/raw/master/img/20211013225106.png)
-
-### 静态工厂方式实例化
-
->   静态工厂是实例化Bean的另一种方式。该方式要求自己创建一个静态工厂的方法来创建Bean的实例。接下来演示静态工厂实例化的使用：
-
-1. 创建名为Bean2的Java类;
-2. 创建一个Java工厂类，在类中使用静态方法获取Bean2实例;
-3. 创建Spring配置文件beans2.xml,并配置工厂类Bean;
-
-Bean2.java
-
-```java
-public class Bean2 {
-
-}
-```
-
-MyBean2Factory.java
-
-```java
-package com.nateshao.instance.static_factory;
-
-/**
- * @date Created by 邵桐杰 on 2021/10/13 22:53
- * @微信公众号 千羽的编程时光
- * @个人网站 www.nateshao.cn
- * @博客 https://nateshao.gitee.io
- * @GitHub https://github.com/nateshao
- * @Gitee https://gitee.com/nateshao
- * Description:
- */
-public class MyBean2Factory {
-    //使用自己的工厂创建Bean2实例
-    public static Bean2 createBean(){
-        return new Bean2();
-    }
-}
-```
-
-beans2.xml
-
-```java
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans 
-    http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
-    <bean id="bean2" 
-            class="com.nateshao.instance.static_factory.MyBean2Factory"
-		   factory-method="createBean" />
-</beans>
-```
-
-![](https://gitee.com/nateshao/images/raw/master/img/20211013225804.png)
-
-### 实例工厂方式实例化
-
-> ​     实例工厂是采用直接创建Bean实例的方式，在配置文件中，通过factory-bean属性配置一个实例工厂，然后使用factory-method属性确定使用工厂中的哪个方法。接下来演示实例工厂实例化的使用：
-
-1. 创建名为Bean3的Java类;
-2. 创建一个Java工厂类，在类中使用非静态方法获取Bean3实例; 
-3. 创建Spring配置文件beans3.xml，并配置工厂类Bean;
-4. 创建测试类，测试程序。
-
-Bean3.java
-
-```java
-public class Bean3 {
-}
-```
-
-MyBean3Factory.java
-
-```java
-package com.nateshao.instance.factory;
-
-/**
- * @date Created by 邵桐杰 on 2021/10/13 23:00
- * @微信公众号 千羽的编程时光
- * @个人网站 www.nateshao.cn
- * @博客 https://nateshao.gitee.io
- * @GitHub https://github.com/nateshao
- * @Gitee https://gitee.com/nateshao
- * Description:
- */
-public class MyBean3Factory {
-    public MyBean3Factory() {
-        System.out.println("bean3工厂实例化中");
-    }
-    //创建Bean3实例的方法
-    public Bean3 createBean(){
-        return new Bean3();
-    }
-}
-```
-
-beans3.java
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans 
-    http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
-    <!-- 配置工厂 -->
-    <bean id="myBean3Factory" 
-            class="com.nateshao.instance.factory.MyBean3Factory" />
-    <!-- 使用factory-bean属性指向配置的实例工厂，
-          使用factory-method属性确定使用工厂中的哪个方法-->
-	<bean id="bean3" factory-bean="myBean3Factory" 
-		   factory-method="createBean" />
-</beans>
-```
-
-InstanceTest3.java
-
-```java
-package com.nateshao.test;
-
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-/**
- * @date Created by 邵桐杰 on 2021/10/13 23:05
- * @微信公众号 千羽的编程时光
- * @个人网站 www.nateshao.cn
- * @博客 https://nateshao.gitee.io
- * @GitHub https://github.com/nateshao
- * @Gitee https://gitee.com/nateshao
- * Description:
- */
-public class InstanceTest3 {
-    public static void main(String[] args) {
-        // 定义配置文件路径
-        String xmlPath = "beans3.xml";
-        // ApplicationContext在加载配置文件时，对Bean进行实例化
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
-        System.out.println(applicationContext.getBean("bean3"));
-    }
-}
-```
-
-运行结果![](https://gitee.com/nateshao/images/raw/master/img/20211013232058.png)
-
-## 3. Bean的作用域
-
-**作用域的种类**
-
-​     Spring 4.3中为Bean的实例定义了7种作用域，如下表所示：
-
-<img src="https://gitee.com/nateshao/images/raw/master/img/20211014080458.png" style="zoom:80%;" />
-
-**注意：**在上表7种作用域中，`singleton`和`prototype`是最常用的两种作用域。
-
-### singleton作用域
-
-​    `singleton`是`Spring`容器默认的作用域，当`Bean`的作用域为`singleton`时，`Spring`容器就只会存在一个共享的`Bean`实例。`singleton`作用域对于无会话状态的`Bean`（如Dao 组件、Service组件）来说，是最理想的选择。
-
-​    在`Spring`配置文件中，可以使用< bean >元素的`scope`属性，将`Bean`的作用域定义成`singleton`。
-
- **在Spring中如何配置singleton作用域?**
-
-比如
-
-```xml
-<bean id="scope" class="com.nateshao.scope.Scope" scope="singleton"/>
-```
-
-### prototype作用域
-
-​    对需要保持会话状态的Bean（如Struts 2的Action类）应该使用prototype作用域。在使用prototype作用域时，Spring容器会为每个对该Bean的请求都创建一个新的实例。
-
-​    在Spring配置文件中，同样使用< bean>元素的scope属性，将Bean的作用域定义成prototype 。
-
-**在Spring中如何配置prototype作用域?**
-
-比如
-
-```xml
-<bean id="scope" class="com.nateshao.scope.Scope" scope=" prototype "/>
-```
-
-代码实例4：ScopeTest
-
-![](https://gitee.com/nateshao/images/raw/master/img/20211014094608.png)
-
-## 4. Bean的生命周期
-
-**了解Spring中Bean的生命周期有何意义？**
-
->    了解Spring中Bean的生命周期的意义就在于，可以利用Bean在其存活期间的特定时刻完成一些相关操作。这种时刻可能有很多，但一般情况下，常会在Bean的postinitiation(初始化后)和predestruction（销毁前）执行一些相关操作。
-
-​    Spring容器可以管理Bean部分作用域的生命周期。有关说明具体如下：
-
-<img src="https://gitee.com/nateshao/images/raw/master/img/20211014082154.png" style="zoom:80%;" />
-
-Spring容器中Bean的生命周期流程如下图所示；
-
-![](https://gitee.com/nateshao/images/raw/master/img/20211014082404.png)
-
-## 5. Bean的装配方式
-
-**什么是Bean的装配？**
-
-> Bean的装配可以理解为依赖关系注入，Bean的装配方式即Bean依赖注入的方式。Spring容器支持多种形式的Bean的装配方式，如基于XML的装配、基于注解（Annotation）的装配和自动装配（其中**最常用的是基于注解的装配**），本节将主要讲解这三种装配方式的使用。
-
-### 基于XML的装配
-
-<img src="https://gitee.com/nateshao/images/raw/master/img/20211014082618.png" style="zoom:80%;" />
-
-基于XML的装配，使用方式如下：
-
-1. 创建Java类，提供有参、无参构造以及属性setter方法;
-2. 创建Spring配置文件beans5.xml，使用2种方式配置Bean; .
-3. 创建测试类，测试程序。
-
-User.java
-
-```java
-package com.nateshao.assemble;
-
-import java.util.List;
-
-/**
- * @date Created by 邵桐杰 on 2021/10/14 9:24
- * @微信公众号 程序员千羽
- * @个人网站 www.nateshao.cn
- * @博客 https://nateshao.gitee.io
- * @GitHub https://github.com/nateshao
- * @Gitee https://gitee.com/nateshao
- * Description:
- */
-public class User {
-    private String username;
-    private int password;
-    private List<String> list;
-    /**
-     * 1.使用构造注入
-     * 1.1提供带所有参数的有参构造方法。
-     */
-    public User(String username, Integer password, List<String> list) {
-        super();
-        this.username = username;
-        this.password = password;
-        this.list = list;
-    }
-    /**
-     * 2.使用设值注入
-     * 2.1提供默认空参构造方法 ;
-     * 2.2为所有属性提供setter方法。
-     */
-    public User() {
-        super();
-    }
-    public void setUsername(String username) {
-        this.username = username;
-    }
-    public void setPassword(Integer password) {
-        this.password = password;
-    }
-    public void setList(List<String> list) {
-        this.list = list;
-    }
-    @Override
-    public String toString() {
-        return "User [username=" + username + ", password=" + password +
-                ", list=" + list + "]";
-    }
-}
-```
-
-beans5.xml
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans 
- 	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
-	<!--1.使用构造注入方式装配User实例 -->
-	<bean id="user1" class="com.nateshao.assemble.User">
-		<constructor-arg index="0" value="tom" />
-		<constructor-arg index="1" value="123456" />
-		<constructor-arg index="2">
-			<list>
-				<value>"constructorvalue1"</value>
-				<value>"constructorvalue2"</value>
-			</list>
-		</constructor-arg>
-	</bean>
-	<!--2.使用设值注入方式装配User实例 -->
-	<bean id="user2" class="com.nateshao.assemble.User">
-		<property name="username" value="张三"></property>
-		<property name="password" value="654321"></property>
-		<!-- 注入list集合 -->
-		<property name="list">
-			<list>
-				<value>"setlistvalue1"</value>
-				<value>"setlistvalue2"</value>
-			</list>
-		</property>
-	</bean>
-</beans>
-```
-
-XmlBeanAssembleTest.java
-
-```java
-package com.nateshao.test;
-
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-/**
- * @date Created by 邵桐杰 on 2021/10/14 9:27
- * @微信公众号 程序员千羽
- * @个人网站 www.nateshao.cn
- * @博客 https://nateshao.gitee.io
- * @GitHub https://github.com/nateshao
- * @Gitee https://gitee.com/nateshao
- * Description:
- */
-public class XmlBeanAssembleTest {
-    public static void main(String[] args) {
-        // 定义配置文件路径
-        String xmlPath = "beans5.xml";
-        // ApplicationContext在加载配置文件时，对Bean进行实例化
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
-        System.out.println(applicationContext.getBean("user1"));
-        System.out.println(applicationContext.getBean("user2"));
-
-    }
-}
-```
-
-运行结果：
-
-![](https://gitee.com/nateshao/images/raw/master/img/20211014094655.png)
-
-
-
-### 基于Annotation的装配
-
-> 基于XML的装配可能会导致XML配置文件过于臃肿，给后续的维护和升级带来一定的困难。为此，Spring提供了对Annotation（注解）技术的全面支持。
-
-**主要注解**
-
-1. **@Component**：用于描述Spring中的Bean，它是一个泛化的概念，仅仅表示一个组件。
-2. **@Repository**：用于将数据访问层（DAO）的类标识为Spring中的Bean 。
-3. **@Service**：用于将业务层（Service）的类标识为Spring中的Bean。
-4. **@Controller**：用于将控制层（Controller）的类标识为Spring中的Bean 。
-5. **@Autowired**：用于对Bean的属性变量、属性的setter方法及构造方法进行标注，配合对应的注解处理器完成Bean的自动配置工作。
-6. **@Resource**：其作用与Autowired一样。@Resource中有两个重要属性：name和type。Spring将name属性解析为Bean实例名称，type属性解析为Bean实例类型。
-7. **@Qualifier**：与@Autowired注解配合使用，会将默认的按Bean类型装配修改为按Bean的实例名称装配，Bean的实例名称由@Qualifier注解的参数指定。
-
-**基于Annotation装配的使用方式如下：**
-
-1. 创建接口UserDao,并定义方法；
-2. 创建接口实现类UserDaoImpl,用@Repository 声明类; 
-3. 创建接口UserService,并定义方法;
-4. 创建接口实现类UserServiceImpl,用@Service声明类，
-5. 并使用@Resource注入UserDao属性;
-6. 创建控制器类，用@Controller声明，并使用@Resource
-7. 注入UserService属性;
-8. 创建Spring配置文件，配置Bean; 
-9. 创建测试类，测试程序。
+>    JDK动态代理是通过java.lang.reflect.Proxy 类来实现的，我们可以调用Proxy类的newProxyInstance()方法来创建代理对象。对于使用业务接口的类，Spring默认会使用JDK动态代理来实现AOP。
 
 **UserDao.java**
 
 ```java
 public interface UserDao {
-    public void save();
+    public void addUser();
+    public void deleteUser();
 }
 ```
 
 **UserDaoImpl.java**
 
 ```java
-package com.nateshao.annotation;
+package com.nateshao.aop;
 
 import org.springframework.stereotype.Repository;
 
 /**
- * @date Created by 邵桐杰 on 2021/10/14 10:12
+ * @date Created by 邵桐杰 on 2021/10/14 17:59
  * @微信公众号 程序员千羽
  * @个人网站 www.nateshao.cn
  * @博客 https://nateshao.gitee.io
@@ -483,65 +64,113 @@ import org.springframework.stereotype.Repository;
  * @Gitee https://gitee.com/nateshao
  * Description:
  */
-@Repository
+@Repository("userDao")
 public class UserDaoImpl implements UserDao{
     @Override
-    public void save() {
-        System.out.println("userdao...save...");
+    public void addUser() {
+        System.out.println("添加用户");
     }
-}
-```
-
-**UserService.java**
-
-```java
-public interface UserService {
-    public void save();
-}
-```
-
-**UserServiceImpl.java**
-
-```java
-package com.nateshao.annotation;
-
-import org.springframework.stereotype.Service;
-import javax.annotation.Resource;
-/**
- * @date Created by 邵桐杰 on 2021/10/14 10:14
- * @微信公众号 程序员千羽
- * @个人网站 www.nateshao.cn
- * @博客 https://nateshao.gitee.io
- * @GitHub https://github.com/nateshao
- * @Gitee https://gitee.com/nateshao
- * Description:
- */
-@Service("userService")
-public class UserServiceImpl implements UserService{
-    @Resource(name="userDao")
-    private UserDao userDao;
 
     @Override
-    public void save() {
-        //调用userDao中的save方法
-        this.userDao.save();
-        System.out.println("userservice....save...");
-    }
-    public void setUserDao(UserDao userDao) {
-        this.userDao = userDao;
+    public void deleteUser() {
+        System.out.println("删除用户");
     }
 }
 ```
 
-**UserController.java**
+**JdkProxy.java**
 
 ```java
-package com.nateshao.annotation;
+package com.nateshao.aop;
 
-import org.springframework.stereotype.Controller;
-import javax.annotation.Resource;
+import com.nateshao.aspect.MyAspect;
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+
 /**
- * @date Created by 邵桐杰 on 2021/10/14 10:17
+ * @date Created by 邵桐杰 on 2021/10/14 18:01
+ * @微信公众号 程序员千羽
+ * @个人网站 www.nateshao.cn
+ * @博客 https://nateshao.gitee.io
+ * @GitHub https://github.com/nateshao
+ * @Gitee https://gitee.com/nateshao
+ * Description: JDK代理类
+ */
+public class JdkProxy implements InvocationHandler {
+    // 声明目标类接口
+    private UserDao userDao;
+    // 创建代理方法
+    public  Object createProxy(UserDao userDao) {
+        this.userDao = userDao;
+        // 1.类加载器
+        ClassLoader classLoader = JdkProxy.class.getClassLoader();
+        // 2.被代理对象实现的所有接口
+        Class[] clazz = userDao.getClass().getInterfaces();
+        // 3.使用代理类，进行增强，返回的是代理后的对象
+        return  Proxy.newProxyInstance(classLoader,clazz,this);
+    }
+
+    /**
+     * 所有动态代理类的方法调用，都会交由invoke()方法去处理
+     * @param proxy 被代理后的对象
+     * @param method 将要被执行的方法信息（反射）
+     * @param args 执行方法时需要的参数
+     * @return
+     * @throws Throwable
+     */
+    @Override
+    public Object invoke(Object proxy, Method method, Object[] args)
+            throws Throwable {
+        // 声明切面
+        MyAspect myAspect = new MyAspect();
+        // 前增强
+        myAspect.check_Permissions();
+        // 在目标类上调用方法，并传入参数
+        Object obj = method.invoke(userDao, args);
+        // 后增强
+        myAspect.log();
+        return obj;
+    }
+}
+```
+
+## CGLIB代理
+
+  通过前面的学习可知，JDK的动态代理用起来非常简单，但它是有局限性的，使用动态代理的对象必须实现一个或多个接口。
+
+**如果想代理没有实现接口的类，那么可以使用CGLIB代理。**
+
+> ​    CGLIB（Code Generation Library）是一个高性能开源的代码生成包，它采用非常底层的字节码技术，对指定的目标类生成一个子类，并对子类进行增强。
+
+**UserDao.java**
+
+```java
+public class UserDao {
+
+    public void addUser(){
+        System.out.println("添加用户");
+    }
+
+    public void deleteUser(){
+        System.out.println("添加用户");
+    }
+}
+```
+
+**CglibProxy.java**
+
+```java
+package com.nateshao.cglib;
+
+import com.nateshao.aspect.MyAspect;
+import org.springframework.cglib.proxy.Enhancer;
+import org.springframework.cglib.proxy.MethodInterceptor;
+import org.springframework.cglib.proxy.MethodProxy;
+import java.lang.reflect.Method;
+
+/**
+ * @date Created by 邵桐杰 on 2021/10/14 18:18
  * @微信公众号 程序员千羽
  * @个人网站 www.nateshao.cn
  * @博客 https://nateshao.gitee.io
@@ -549,56 +178,373 @@ import javax.annotation.Resource;
  * @Gitee https://gitee.com/nateshao
  * Description:
  */
-@Controller("userController")
-public class UserController {
-    
-    @Resource(name="userService")
-    private UserService userService;
-    
-    public void save(){
-        this.userService.save();
-        System.out.println("userController...save...");
+// 代理类
+public class CglibProxy implements MethodInterceptor {
+    // 代理方法
+    public  Object createProxy(Object target) {
+        // 创建一个动态类对象
+        Enhancer enhancer = new Enhancer();
+        // 确定需要增强的类，设置其父类
+        enhancer.setSuperclass(target.getClass());
+        // 添加回调函数
+        enhancer.setCallback(this);
+        // 返回创建的代理类
+        return enhancer.create();
     }
 
-    public void setUserService(UserService userService) {
-        this.userService = userService;
+    /**
+     * @param proxy CGlib根据指定父类生成的代理对象
+     * @param method 拦截的方法
+     * @param args 拦截方法的参数数组
+     * @param methodProxy 方法的代理对象，用于执行父类的方法
+     * @return
+     * @throws Throwable
+     */
+    @Override
+    public Object intercept(Object proxy, Method method, Object[] args,
+                            MethodProxy methodProxy) throws Throwable {
+        // 创建切面类对象
+        MyAspect myAspect = new MyAspect();
+        // 前增强
+        myAspect.check_Permissions();
+        // 目标方法执行
+        Object obj = methodProxy.invokeSuper(proxy, args);
+        // 后增强
+        myAspect.log();
+        return obj;
     }
 }
 ```
 
-**beans.xml**
+**CglibTest.java**
 
 ```java
+package com.nateshao.cglib;
+
+/**
+ * @date Created by 邵桐杰 on 2021/10/14 18:25
+ * @微信公众号 程序员千羽
+ * @个人网站 www.nateshao.cn
+ * @博客 https://nateshao.gitee.io
+ * @GitHub https://github.com/nateshao
+ * @Gitee https://gitee.com/nateshao
+ * Description:
+ */
+public class CglibTest {
+    public static void main(String[] args) {
+        // 创建代理对象
+        CglibProxy cglibProxy = new CglibProxy();
+        // 创建目标对象
+        UserDao userDao = new UserDao();
+        // 获取增强后的目标对象
+        UserDao userDao1 = (UserDao)cglibProxy.createProxy(userDao);
+        // 执行方法
+        userDao1.addUser();
+        userDao1.deleteUser();
+    }
+}
+```
+
+![](https://gitee.com/nateshao/images/raw/master/img/20211014183448.png)
+
+## 3. 基于代理类的AOP实现
+
+## Spring的通知类型
+
+​    Spring按照通知在目标类方法的连接点位置，可以分为5种类型，具体如下：
+
+1. org.springframework.aop.**MethodBeforeAdvice**（前置通知）
+
+      在目标方法执行前实施增强，可以应用于权限管理等功能。
+
+2. org.springframework.aop.**AfterReturningAdvice**（后置通知）
+
+      在目标方法执行后实施增强，可以应用于关闭流、上传文件、删除临时文件等功能。
+
+3. org.aopalliance.intercept.**MethodInterceptor**（环绕通知）
+
+      在目标方法执行前后实施增强，可以应用于日志、事务管理等功能。
+
+4. org.springframework.aop.**ThrowsAdvice**（异常抛出通知）
+
+      在方法抛出异常后实施增强，可以应用于处理异常记录日志等功能。
+
+5. org.springframework.aop.**IntroductionInterceptor**（引介通知）
+
+      在目标类中添加一些新的方法和属性，可以应用于修改老版本程序。
+
+## ProxyFactoryBean
+
+> ​    ProxyFactoryBean是FactoryBean接口的实现类，FactoryBean负责实例化一个Bean，而ProxyFactoryBean负责为其他Bean创建代理实例。在Spring中，使用ProxyFactoryBean是创建AOP代理的基本方式。
+
+  ProxyFactoryBean类中的常用可配置属性如下：
+
+<img src="https://gitee.com/nateshao/images/raw/master/img/20211014183454.png" style="zoom:80%;" />
+
+代码实现
+
+**MyAspect.java**
+
+```java
+package com.nateshao.factorybean;
+
+import org.aopalliance.intercept.MethodInterceptor;
+import org.aopalliance.intercept.MethodInvocation;
+
+/**
+ * @date Created by 邵桐杰 on 2021/10/14 18:36
+ * @微信公众号 程序员千羽
+ * @个人网站 www.nateshao.cn
+ * @博客 https://nateshao.gitee.io
+ * @GitHub https://github.com/nateshao
+ * @Gitee https://gitee.com/nateshao
+ * Description:  切面类
+ */
+public class MyAspect implements MethodInterceptor {
+
+    @Override
+    public Object invoke(MethodInvocation mi) throws Throwable {
+        check_Permissions();
+        // 执行目标方法
+        Object obj = mi.proceed();
+        log();
+        return obj;
+    }
+    public void check_Permissions(){
+        System.out.println("模拟检查权限...");
+    }
+    public void log(){
+        System.out.println("模拟记录日志...");
+    }
+}
+```
+
+**applicationContext.xml**
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-      xmlns:context="http://www.springframework.org/schema/context"
-      xsi:schemaLocation="http://www.springframework.org/schema/beans 
-      http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
-      http://www.springframework.org/schema/context 
-  http://www.springframework.org/schema/context/spring-context-4.3.xsd">
- <!-- 使用 context 命名空间 ,在配置文件中开启相应的注解处理器 -->
-	  <context:annotation-config />
-	 <!--分别定义3个Bean实例  -->
-       <bean id="userDao" class="com.nateshao.annotation.UserDaoImpl" />
-      <bean id="userService" class="com.nateshao.annotation.UserServiceImpl" />
-      <bean id="userController" class="com.nateshao.annotation.UserController" />
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+    <!-- 1 目标类 -->
+    <bean id="userDao" class="com.nateshao.jdk.UserDaoImpl" />
+    <!-- 2 切面类 -->
+    <bean id="myAspect" class="com.nateshao.factorybean.MyAspect" />
+    <!-- 3 使用Spring代理工厂定义一个名称为userDaoProxy的代理对象 -->
+    <bean id="userDaoProxy"
+          class="org.springframework.aop.framework.ProxyFactoryBean">
+        <!-- 3.1 指定代理实现的接口-->
+        <property name="proxyInterfaces"
+                  value="com.nateshao.jdk.UserDao" />
+        <!-- 3.2 指定目标对象 -->
+        <property name="target" ref="userDao" />
+        <!-- 3.3 指定切面,织入环绕通知 -->
+        <property name="interceptorNames" value="myAspect" />
+        <!-- 3.4 指定代理方式，true：使用cglib，false(默认)：使用jdk动态代理 -->
+        <property name="proxyTargetClass" value="true" />
+    </bean>
 </beans>
 ```
 
-<img src="https://gitee.com/nateshao/images/raw/master/img/20211014103241.png" style="zoom:80%;" />
-
-**AnnotationAssembleTest.java**
+**ProxyFactoryBeanTest.java**
 
 ```java
-package com.nateshao.test;
+package com.nateshao.factorybean;
 
-import com.nateshao.annotation.UserController;
+import com.nateshao.jdk.UserDao;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * @date Created by 邵桐杰 on 2021/10/14 10:20
+ * @date Created by 邵桐杰 on 2021/10/14 18:41
+ * @微信公众号 程序员千羽
+ * @个人网站 www.nateshao.cn
+ * @博客 https://nateshao.gitee.io
+ * @GitHub https://github.com/nateshao
+ * @Gitee https://gitee.com/nateshao
+ * Description: 测试类
+ */
+public class ProxyFactoryBeanTest {
+    public static void main(String args[]) {
+        String xmlPath = "applicationContext.xml";
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
+        // 从Spring容器获得内容
+        UserDao userDao = (UserDao) applicationContext.getBean("userDaoProxy");
+        // 执行方法
+        userDao.addUser();
+        userDao.deleteUser();
+    }
+}
+```
+
+## 4. AspectJ开发
+
+> 概述： AspectJ是一个基于Java语言的AOP框架，它提供了强大的AOP功能。Spring 2.0以后，Spring AOP引入了对AspectJ的支持，并允许直接使用AspectJ进行编程，而Spring自身的AOP API也尽量与AspectJ保持一致。新版本的Spring框架，也建议使用AspectJ来开发AOP。
+>
+>   使用AspectJ实现AOP有两种方式：一种是基于XML的声明式AspectJ，另一种是基于注解的声明式AspectJ。
+
+## 基于XML的声明式AspectJ
+
+> ​    基于XML的声明式AspectJ是指通过XML文件来定义切面、切入点及通知，所有的切面、切入点和通知都必须定义在< aop:config >元素内。
+
+< aop:config >元素及其子元素如下：
+
+![](https://gitee.com/nateshao/images/raw/master/img/20211014184839.png)
+
+**小提示**：**图中灰色部分标注的元素即为常用的配置元素**
+
+
+
+​    XML文件中常用元素的配置方式如下：
+
+```xml
+<bean id="myAspect" class="com.nateshao.aspectj.xml.MyAspect" />
+<aop:config>
+<aop:aspect  id="aspect"  ref="myAspect">
+    <aop:pointcut expression="execution(* com.nateshao.jdk.*.*(..))“ id="myPointCut" />
+                  <aop:before method="myBefore" pointcut-ref="myPointCut" />
+                  <aop:after-returning method="myAfterReturning“ pointcut-ref="myPointCut"                      						returning="returnVal" />
+    <aop:around method="myAround" pointcut-ref="myPointCut" />
+    <aop:after-throwing method="myAfterThrowing“ pointcut-ref="myPointCut" throwing="e" />
+                  <aop:after method="myAfter" pointcut-ref="myPointCut" />
+    </aop:aspect>
+</aop:config>
+```
+
+1. 配置切面
+
+   > 在Spring的配置文件中，配置切面使用的是< aop:aspect >元素，该元素会将一个已定义好的Spring Bean转换成切面Bean，所以要在配置文件中先定义一个普通的Spring Bean。
+
+​    **配置< aop:aspect >元素时，通常会指定id和ref两个属性。**
+
+​		id：用于定义该切面的唯一标识名称。
+​		ref：用于引用普通的Spring Bean
+
+2. 配置切入点
+
+> 当< aop:pointcut>元素作为< aop:config>元素的子元素定义时，表示该切入点是全局切入点，它可被多个切面所共享；当< aop:pointcut>元素作为< aop:aspect>元素的子元素时，表示该切入点只对当前切面有效。
+
+​    **在定义< aop:pointcut>元素时，通常会指定id和expression两个属性。**
+
+​		id：用于指定切入点的唯-标识名称。.
+​		expressione：用于指定切入点关联的切入点表达式
+
+**切入点表达式**
+
+​    execution(* com.nateshao.jdk. * . * (..)) 是定义的切入点表达式，该切入点表达式的意思是匹配com.nateshao.jdk包中任意类的任意方法的执行。
+
+- execution(* com.nateshao.jdk.*.*(..)) ：表达式的主体
+- execution(* ：* 表示所有返回类型
+
+- com.nateshao.jdk：需要拦截的包名字
+- execution(* com.nateshao.jdk. * ：* 代表所有类
+- execution(* com.nateshao.jdk. * . * ：方法名，使用* 代表所有方法
+- execution(* com.nateshao.jdk.*.*(..)) ： . .  表示任意参数
+
+3. 配置通知
+
+> ​    使用< aop:aspect>的子元素可以配置5种常用通知，这5个子元素不支持使用子元素，但在使用时可以指定一些属性，其常用属性及其描述如下：
+
+![](https://gitee.com/nateshao/images/raw/master/img/20211014192452.png)
+
+**MyAspect.java**
+
+```java
+package com.nateshao.aspectj.xml;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
+/**
+ * @date Created by 邵桐杰 on 2021/10/14 19:56
+ * @微信公众号 程序员千羽
+ * @个人网站 www.nateshao.cn
+ * @博客 https://nateshao.gitee.io
+ * @GitHub https://github.com/nateshao
+ * @Gitee https://gitee.com/nateshao
+ * Description: 切面类，在此类中编写通知
+ */
+public class MyAspect {
+    // 前置通知
+    public void myBefore(JoinPoint joinPoint) {
+        System.out.print("前置通知 ：模拟执行权限检查...,");
+        System.out.print("目标类是："+joinPoint.getTarget() );
+        System.out.println(",被织入增强处理的目标方法为："
+                +joinPoint.getSignature().getName());
+    }
+    // 后置通知
+    public void myAfterReturning(JoinPoint joinPoint) {
+        System.out.print("后置通知：模拟记录日志...," );
+        System.out.println("被织入增强处理的目标方法为："
+                + joinPoint.getSignature().getName());
+    }
+    /**
+     * 环绕通知
+     * ProceedingJoinPoint 是JoinPoint子接口，表示可以执行目标方法
+     * 1.必须是Object类型的返回值
+     * 2.必须接收一个参数，类型为ProceedingJoinPoint
+     * 3.必须throws Throwable
+     */
+    public Object myAround(ProceedingJoinPoint proceedingJoinPoint)
+            throws Throwable {
+        // 开始
+        System.out.println("环绕开始：执行目标方法之前，模拟开启事务...");
+        // 执行当前目标方法
+        Object obj = proceedingJoinPoint.proceed();
+        // 结束
+        System.out.println("环绕结束：执行目标方法之后，模拟关闭事务...");
+        return obj;
+    }
+    // 异常通知
+    public void myAfterThrowing(JoinPoint joinPoint, Throwable e) {
+        System.out.println("异常通知：" + "出错了" + e.getMessage());
+    }
+    // 最终通知
+    public void myAfter() {
+        System.out.println("最终通知：模拟方法结束后的释放资源...");
+    }
+}
+```
+
+**config.xml**
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+    <!-- 1 目标类 -->
+    <bean id="userDao" class="com.nateshao.jdk.UserDaoImpl" />
+    <!-- 2 切面类 -->
+    <bean id="myAspect" class="com.nateshao.factorybean.MyAspect" />
+    <!-- 3 使用Spring代理工厂定义一个名称为userDaoProxy的代理对象 -->
+    <bean id="userDaoProxy"
+          class="org.springframework.aop.framework.ProxyFactoryBean">
+        <!-- 3.1 指定代理实现的接口-->
+        <property name="proxyInterfaces"
+                  value="com.nateshao.jdk.UserDao" />
+        <!-- 3.2 指定目标对象 -->
+        <property name="target" ref="userDao" />
+        <!-- 3.3 指定切面,织入环绕通知 -->
+        <property name="interceptorNames" value="myAspect" />
+        <!-- 3.4 指定代理方式，true：使用cglib，false(默认)：使用jdk动态代理 -->
+        <property name="proxyTargetClass" value="true" />
+    </bean>
+</beans>
+```
+
+**TestXmlAspectj.java**
+
+```java
+package com.nateshao.aspectj.xml;
+
+import com.nateshao.jdk.UserDao;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+/**
+ * @date Created by 邵桐杰 on 2021/10/14 19:58
  * @微信公众号 程序员千羽
  * @个人网站 www.nateshao.cn
  * @博客 https://nateshao.gitee.io
@@ -606,47 +552,143 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @Gitee https://gitee.com/nateshao
  * Description:
  */
-public class AnnotationAssembleTest {
-    public static void main(String[] args) {
-        // 定义配置文件路径
-        String xmlPath = "beans6.xml";
-        // 加载配置文件
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
-        // 获取UserController实例
-        UserController userController = (UserController) applicationContext.getBean("userController");
-        // 调用UserController中的save()方法
-        userController.save();
+public class TestXmlAspectj {
+    public static void main(String args[]) {
+        String xmlPath =
+                "config.xml";
+        ApplicationContext applicationContext =
+                new ClassPathXmlApplicationContext(xmlPath);
+        // 1 从spring容器获得内容
+        UserDao userDao = (UserDao) applicationContext.getBean("userDao");
+        // 2 执行方法
+        userDao.addUser();
     }
 }
 ```
 
-![](https://gitee.com/nateshao/images/raw/master/img/20211014102456.png)
+## 基于注解的声明式AspectJ(常用)
 
-**小提示：** 除了可以像示例中通过< bean >元素来配置Bean外，还可以通过包扫描的形式来配置一个包下的所有Bean：
+> AspectJ框架为AOP的实现提供了一套注解，用以取代Spring配置文件中为实现AOP功能所配置的臃肿代码。AspectJ的注解及其描述如下所示：
 
-```xml
-<context:component-scan base-package="com.nateshao.annotation" />
+![](https://gitee.com/nateshao/images/raw/master/img/20211014201352.png)
+
+**MyAspect.java**
+
+```java
+package com.nateshao.aspectj.annotation;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.*;
+import org.springframework.stereotype.Component;
+
+/**
+ * @date Created by 邵桐杰 on 2021/10/14 20:06
+ * @微信公众号 程序员千羽
+ * @个人网站 www.nateshao.cn
+ * @博客 https://nateshao.gitee.io
+ * @GitHub https://github.com/nateshao
+ * @Gitee https://gitee.com/nateshao
+ * Description: 切面类，在此类中编写通知
+ */
+@Aspect
+@Component
+public class MyAspect {
+    // 定义切入点表达式
+    @Pointcut("execution(* com.nateshao.jdk.*.*(..))")
+    // 使用一个返回值为void、方法体为空的方法来命名切入点
+    private void myPointCut(){}
+    // 前置通知
+    @Before("myPointCut()")
+    public void myBefore(JoinPoint joinPoint) {
+        System.out.print("前置通知 ：模拟执行权限检查...,");
+        System.out.print("目标类是："+joinPoint.getTarget() );
+        System.out.println(",被织入增强处理的目标方法为："
+                +joinPoint.getSignature().getName());
+    }
+    // 后置通知
+    @AfterReturning(value="myPointCut()")
+    public void myAfterReturning(JoinPoint joinPoint) {
+        System.out.print("后置通知：模拟记录日志...," );
+        System.out.println("被织入增强处理的目标方法为："
+                + joinPoint.getSignature().getName());
+    }
+    // 环绕通知
+    @Around("myPointCut()")
+    public Object myAround(ProceedingJoinPoint proceedingJoinPoint)
+            throws Throwable {
+        // 开始
+        System.out.println("环绕开始：执行目标方法之前，模拟开启事务...");
+        // 执行当前目标方法
+        Object obj = proceedingJoinPoint.proceed();
+        // 结束
+        System.out.println("环绕结束：执行目标方法之后，模拟关闭事务...");
+        return obj;
+    }
+    // 异常通知
+    @AfterThrowing(value="myPointCut()",throwing="e")
+    public void myAfterThrowing(JoinPoint joinPoint, Throwable e) {
+        System.out.println("异常通知：" + "出错了" + e.getMessage());
+    }
+    // 最终通知
+    @After("myPointCut()")
+    public void myAfter() {
+        System.out.println("最终通知：模拟方法结束后的释放资源...");
+    }
+}
 ```
 
-###      自动装配
-
->  所谓自动装配，就是将一个Bean自动的注入到到其他Bean的Property中。 Spring的<bean>元素中包含一个autowire属性，我们可以通过设置autowire的属性值来自动装配Bean。autowire属性有5个值，其值及说明下表所示：
-
-![](https://gitee.com/nateshao/images/raw/master/img/20211014102707.png)
-
-自动装配，使用方式如下：
-
-1. 修改上一节UserServiceImple和UserController,分别增加类属性的setter方法;
-2. 修改Spring配置文件，使用autowire属性配置Bean;
-3. 重新测试程序。
+**annotation.xml**
 
 ```xml
-<bean id="userDao" class="com.nateshao.annotation.UserDaoImpl" />
-<bean id="userService" class="com.nateshao.annotation.UserServiceImpl" autowire="byName" />
-<bean id="userController" class="com.nateshao.annotation.UserController" autowire="byName" />
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+  http://www.springframework.org/schema/aop
+  http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+  http://www.springframework.org/schema/context
+  http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+    <!-- 指定需要扫描的包，使注解生效 -->
+    <context:component-scan base-package="com.nateshao" />
+    <!-- 启动基于注解的声明式AspectJ支持 -->
+    <aop:aspectj-autoproxy />
+</beans>
 ```
 
-<img src="https://gitee.com/nateshao/images/raw/master/img/20211014103354.png" style="zoom:80%;" />
+**TestAnnotationAspectj.java**
+
+```java
+package com.nateshao.aspectj.annotation;
+
+import com.nateshao.jdk.UserDao;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+/**
+ * @date Created by 邵桐杰 on 2021/10/14 20:09
+ * @微信公众号 程序员千羽
+ * @个人网站 www.nateshao.cn
+ * @博客 https://nateshao.gitee.io
+ * @GitHub https://github.com/nateshao
+ * @Gitee https://gitee.com/nateshao
+ * Description:
+ */
+public class TestAnnotationAspectj {
+    public static void main(String args[]) {
+        String xmlPath = "annotation.xml";
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
+        // 1 从spring容器获得内容
+        UserDao userDao = (UserDao) applicationContext.getBean("userDao");
+        // 2 执行方法
+        userDao.addUser();
+    }
+}
+```
+
+![](https://gitee.com/nateshao/images/raw/master/img/20211014201655.png)
 
 
 
