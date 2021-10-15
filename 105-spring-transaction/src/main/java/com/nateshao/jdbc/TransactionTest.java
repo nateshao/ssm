@@ -19,10 +19,9 @@ public class TransactionTest {
         ApplicationContext applicationContext =
                 new ClassPathXmlApplicationContext("applicationContext.xml");
         // 获取AccountDao实例
-        AccountDao accountDao =
-                (AccountDao) applicationContext.getBean("accountDao");
+        AccountDao accountDao = (AccountDao) applicationContext.getBean("accountDao");
         // 调用实例中的转账方法
-        accountDao.transfer("Jack", "Rose", 100.0);
+        accountDao.transfer("千羽", "千寻", 100.0);
         // 输出提示信息
         System.out.println("转账成功！");
     }
@@ -35,7 +34,7 @@ public class TransactionTest {
         AccountDao accountDao =
                 (AccountDao) applicationContext.getBean("accountDao");
         // 调用实例中的转账方法
-        accountDao.transfer("Jack", "Rose", 100.0);
+        accountDao.transfer("千寻111", "千羽111", 100.0);
         // 输出提示信息
         System.out.println("转账成功！");
     }

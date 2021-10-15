@@ -18,7 +18,7 @@ import java.util.List;
  * @Gitee https://gitee.com/nateshao
  * Description:
  */
-public class AccountDaoImpl implements AccountDao{
+public class AccountDaoImpl implements AccountDao {
 
     // 声明JdbcTemplate属性及其setter方法
     private JdbcTemplate jdbcTemplate;
@@ -29,6 +29,7 @@ public class AccountDaoImpl implements AccountDao{
 
     /**
      * 添加账户
+     *
      * @param account
      * @return
      */
@@ -37,24 +38,36 @@ public class AccountDaoImpl implements AccountDao{
         // 定义SQL
         String sql = "insert into account(username,balance) value(?,?)";
         // 定义数组来存放SQL语句中的参数
-        Object[] obj = new Object[] { account.getUsername(), account.getBalance() };
+        Object[] obj = new Object[]{account.getUsername(), account.getBalance()};
         // 执行添加操作，返回的是受SQL语句影响的记录条数
         int num = this.jdbcTemplate.update(sql, obj);
         return num;
     }
 
-    // 更新账户
+    /**
+     * 更新账户
+     *
+     * @param account
+     * @return
+     */
+    @Override
     public int updateAccount(Account account) {
         // 定义SQL
         String sql = "update account set username=?,balance=? where id = ?";
         // 定义数组来存放SQL语句中的参数
-        Object[] params = new Object[] { account.getUsername(), account.getBalance(), account.getId() };
+        Object[] params = new Object[]{account.getUsername(), account.getBalance(), account.getId()};
         // 执行添加操作，返回的是受SQL语句影响的记录条数
         int num = this.jdbcTemplate.update(sql, params);
         return num;
     }
 
-    // 删除账户
+    /**
+     * 删除账户
+     *
+     * @param id
+     * @return
+     */
+    @Override
     public int deleteAccount(int id) {
         // 定义SQL
         String sql = "delete  from account where id = ? ";
@@ -63,7 +76,13 @@ public class AccountDaoImpl implements AccountDao{
         return num;
     }
 
-    // 通过id查询账户数据信息
+    /**
+     * 通过id查询账户数据信息
+     *
+     * @param id
+     * @return
+     */
+    @Override
     public Account findAccountById(int id) {
         // 定义SQL语句
         String sql = "select * from account where id = ?";
@@ -73,7 +92,13 @@ public class AccountDaoImpl implements AccountDao{
         return this.jdbcTemplate.queryForObject(sql, rowMapper, id);
     }
 
-    // 查询所有账户信息
+
+    /**
+     * 查询所有账户信息
+     *
+     * @return
+     */
+    @Override
     public List<Account> findAllAccount() {
         // 定义SQL语句
         String sql = "select * from account";
@@ -84,10 +109,10 @@ public class AccountDaoImpl implements AccountDao{
     }
 
     /**
-     *  转账
-     *  inUser：收款人
-     *  outUser：汇款人
-     *  money：收款金额
+     * 转账
+     * inUser：收款人
+     * outUser：汇款人
+     * money：收款金额
      */
 //	public void transfer(String outUser, String inUser, Double money) {
 //	    // 收款时，收款用户的余额=现有余额+所汇金额
@@ -99,18 +124,18 @@ public class AccountDaoImpl implements AccountDao{
 //	    this.jdbcTemplate.update("update account set balance = balance-? "
 //	            + "where username = ?",money, outUser);
 //	}
-
     @Transactional(propagation = Propagation.REQUIRED,
             isolation = Isolation.DEFAULT, readOnly = false)
+    @Override
     public void transfer(String outUser, String inUser, Double money) {
         // 收款时，收款用户的余额=现有余额+所汇金额
         this.jdbcTemplate.update("update account set balance = balance +? "
-                + "where username = ?",money, inUser);
+                + "where username = ?", money, inUser);
         // 模拟系统运行时的突发性问题
-        int i = 1/0;
+//        int i = 1/0;
         // 汇款时，汇款用户的余额=现有余额-所汇金额
         this.jdbcTemplate.update("update account set balance = balance-? "
-                + "where username = ?",money, outUser);
+                + "where username = ?", money, outUser);
     }
 
 }
