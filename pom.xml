@@ -19,6 +19,7 @@
         <module>101-spring-ioc-di</module>
         <module>003-spring-aop</module>
         <module>103-spring-aop</module>
+        <module>104-spring-jdbc</module>
     </modules>
 
 

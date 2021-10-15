@@ -18,7 +18,6 @@ public class HelloController {
 
     @RequestMapping("/by")
     public String hello(){
-
         return "hello by";
     }
 }

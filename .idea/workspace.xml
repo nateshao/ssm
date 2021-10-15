@@ -25,35 +25,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5742f4cb-dc8d-4349-a22e-84f3ab4ed049" name="Default Changelist" comment="ssm">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/004_springmvc_hello_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/004_springmvc_hello_war_exploded2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/004_springmvc_hello_war_exploded3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Spring_MVC_5_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Spring_MVC_5_2_3_RELEASE__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Spring_MVC_5_2_3_RELEASE__3_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/java/com/nateshao/aspect/MyAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/java/com/nateshao/aspectj/annotation/MyAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/java/com/nateshao/aspectj/annotation/TestAnnotationAspectj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/java/com/nateshao/aspectj/xml/MyAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/java/com/nateshao/aspectj/xml/TestXmlAspectj.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/java/com/nateshao/cglib/CglibProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/java/com/nateshao/cglib/CglibTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/java/com/nateshao/cglib/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/java/com/nateshao/factorybean/MyAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/java/com/nateshao/factorybean/ProxyFactoryBeanTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/java/com/nateshao/jdk/JdkProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/java/com/nateshao/jdk/JdkTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/java/com/nateshao/jdk/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/java/com/nateshao/jdk/UserDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/resources/annotation.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/103-spring-aop/src/main/resources/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/003-Spring中的AOP.xmind" beforeDir="false" afterPath="$PROJECT_DIR$/003-Spring中的AOP.xmind" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-Spring中的AOP.md" beforeDir="false" afterPath="$PROJECT_DIR$/03-Spring中的AOP.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/103-spring-aop/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/103-spring-aop/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/004-springmvc/004-springmvc-hello/src/com/nateshao/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/004-springmvc/004-springmvc-hello/src/com/nateshao/controller/HelloController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
