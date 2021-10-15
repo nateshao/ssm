@@ -25,8 +25,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5742f4cb-dc8d-4349-a22e-84f3ab4ed049" name="Default Changelist" comment="ssm">
+      <change afterPath="$PROJECT_DIR$/04-Spring数据库开发.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/04-spring数据开发.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/104-spring-jdbc/104-spring-jdbc.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/104-spring-jdbc/src/main/java/com/nateshao/jdbc/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/104-spring-jdbc/src/main/java/com/nateshao/jdbc/AccountDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/104-spring-jdbc/src/main/java/com/nateshao/jdbc/AccountDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/104-spring-jdbc/src/main/java/com/nateshao/jdbc/JdbcTemplateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/104-spring-jdbc/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/004-springmvc/004-springmvc-hello/src/com/nateshao/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/004-springmvc/004-springmvc-hello/src/com/nateshao/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/104-spring-jdbc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/104-spring-jdbc/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +46,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
-        <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -80,7 +89,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/004-springmvc-hello/web/WEB-INF/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/104-spring-jdbc/src/main/resources" />
     <property name="nodejs_interpreter_path" value="E:/nodejs/node" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -105,38 +114,17 @@
       <recent name="com.nateshao.cglib" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\GitHub--Gitee\ssm\104-spring-jdbc\src\main\resources" />
       <recent name="F:\GitHub--Gitee\ssm\102-spring-bean\src\main\resources" />
       <recent name="F:\GitHub--Gitee\ssm\101-spring-ioc-di\src\main\java\com\nateshao\ioc" />
       <recent name="F:\GitHub--Gitee\ssm\101-spring-ioc-di\src\main\resources" />
       <recent name="F:\GitHub--Gitee\ssm" />
-      <recent name="F:\GitHub--Gitee\ssm\ssm-combine\src\main\java" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.nateshao.instance.factory" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestAnnotationAspectj">
-    <configuration name="CglibTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nateshao.cglib.CglibTest" />
-      <module name="103-spring-aop" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JdkTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nateshao.aop.JdkTest" />
-      <module name="103-spring-aop" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProxyFactoryBeanTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nateshao.factorybean.ProxyFactoryBeanTest" />
-      <module name="103-spring-aop" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.JdbcTemplateTest.findAllAccountTest">
     <configuration name="TestAnnotationAspectj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nateshao.aspectj.annotation.TestAnnotationAspectj" />
       <module name="103-spring-aop" />
@@ -144,9 +132,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestXmlAspectj" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nateshao.aspectj.xml.TestXmlAspectj" />
-      <module name="103-spring-aop" />
+    <configuration name="JdbcTemplateTest.addAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="104-spring-jdbc" />
+      <option name="PACKAGE_NAME" value="com.nateshao.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.nateshao.jdbc.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="addAccountTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcTemplateTest.findAccountByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="104-spring-jdbc" />
+      <option name="PACKAGE_NAME" value="com.nateshao.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.nateshao.jdbc.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="findAccountByIdTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcTemplateTest.findAllAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="104-spring-jdbc" />
+      <option name="PACKAGE_NAME" value="com.nateshao.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.nateshao.jdbc.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="findAllAccountTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcTemplateTest.updateAccountTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="104-spring-jdbc" />
+      <option name="PACKAGE_NAME" value="com.nateshao.jdbc" />
+      <option name="MAIN_CLASS_NAME" value="com.nateshao.jdbc.JdbcTemplateTest" />
+      <option name="METHOD_NAME" value="updateAccountTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -211,20 +232,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.JdkTest" />
-      <item itemvalue="Application.CglibTest" />
-      <item itemvalue="Application.ProxyFactoryBeanTest" />
-      <item itemvalue="Application.TestXmlAspectj" />
       <item itemvalue="Application.TestAnnotationAspectj" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.24" />
+      <item itemvalue="JUnit.JdbcTemplateTest.addAccountTest" />
+      <item itemvalue="JUnit.JdbcTemplateTest.updateAccountTest" />
+      <item itemvalue="JUnit.JdbcTemplateTest.findAccountByIdTest" />
+      <item itemvalue="JUnit.JdbcTemplateTest.findAllAccountTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JdbcTemplateTest.findAllAccountTest" />
+        <item itemvalue="JUnit.JdbcTemplateTest.findAccountByIdTest" />
+        <item itemvalue="JUnit.JdbcTemplateTest.addAccountTest" />
+        <item itemvalue="JUnit.JdbcTemplateTest.updateAccountTest" />
         <item itemvalue="Application.TestAnnotationAspectj" />
-        <item itemvalue="Application.TestXmlAspectj" />
-        <item itemvalue="Application.ProxyFactoryBeanTest" />
-        <item itemvalue="Application.CglibTest" />
-        <item itemvalue="Application.JdkTest" />
       </list>
     </recent_temporary>
   </component>
@@ -253,10 +274,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="ssm" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="249" y="0" key="#Project_Structure" timestamp="1634225232764">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1634283969457">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1634225232764" />
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1634283969457" />
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1632972178696">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -265,10 +286,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="505" y="213" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1632970604131" />
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1634207818388">
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser" timestamp="1634294259959">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1634207818388" />
+    <state x="574" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1634294259959" />
     <state x="490" y="50" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1632972149480">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -289,22 +310,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1634260220204" />
-    <state width="1492" height="249" key="GridCell.Tab.0.bottom" timestamp="1634219187564">
+    <state width="1492" height="274" key="GridCell.Tab.0.bottom" timestamp="1634294211512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="249" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1634219187564" />
-    <state width="1492" height="249" key="GridCell.Tab.0.center" timestamp="1634219187564">
+    <state width="1492" height="274" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1634294211512" />
+    <state width="1492" height="274" key="GridCell.Tab.0.center" timestamp="1634294211512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="249" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1634219187564" />
-    <state width="1492" height="249" key="GridCell.Tab.0.left" timestamp="1634219187564">
+    <state width="1492" height="274" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1634294211512" />
+    <state width="1492" height="274" key="GridCell.Tab.0.left" timestamp="1634294211512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="249" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1634219187564" />
-    <state width="1492" height="249" key="GridCell.Tab.0.right" timestamp="1634219187564">
+    <state width="1492" height="274" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1634294211512" />
+    <state width="1492" height="274" key="GridCell.Tab.0.right" timestamp="1634294211512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="249" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1634219187564" />
+    <state width="1492" height="274" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1634294211512" />
     <state width="1492" height="261" key="GridCell.Tab.1.bottom" timestamp="1634138746697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -337,18 +358,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="425" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1632973340471" />
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1634212816182">
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1634284721327">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1634212816182" />
+    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1634284721327" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1634225214572">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1634225214572" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1634180079190">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1634283917774">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1634180079190" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1634283917774" />
     <state x="540" y="157" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1632396236893">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -357,21 +378,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="468" y="115" width="600" height="594" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1634138623720" />
-    <state x="364" y="0" width="1069" height="824" key="new project wizard" timestamp="1634260239810">
+    <state x="364" y="0" width="1069" height="824" key="new project wizard" timestamp="1634283812466">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="364" y="0" width="1069" height="824" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1634260239810" />
+    <state x="364" y="0" width="1069" height="824" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1634283812466" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1634137609275">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1634137609275" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1632750879231">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1634284290395">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1632750879231" />
-    <state x="449" y="95" key="spring file set editor" timestamp="1634213299709">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1634284290395" />
+    <state x="449" y="95" key="spring file set editor" timestamp="1634283979316">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="95" key="spring file set editor/0.0.1536.824@0.0.1536.824" timestamp="1634213299709" />
+    <state x="449" y="95" key="spring file set editor/0.0.1536.824@0.0.1536.824" timestamp="1634283979316" />
   </component>
 </project>
