@@ -11,6 +11,7 @@
         <module name="002-spring-ioc" />
         <module name="001-spring-hello" />
         <module name="101-spring-ioc-di" />
+        <module name="105-spring-transaction" />
         <module name="003-spring-aop-schema-advise" />
         <module name="103-spring-aop" />
         <module name="104-spring-jdbc" />
@@ -20,6 +21,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="003-spring-aop" target="1.5" />
+      <module name="005-spring-transaction" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

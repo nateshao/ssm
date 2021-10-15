@@ -20,6 +20,9 @@
         <module>003-spring-aop</module>
         <module>103-spring-aop</module>
         <module>104-spring-jdbc</module>
+        <module>005-spring-transaction</module>
+        <module>105-spring-transaction</module>
+        <module>105-spring-transaction</module>
     </modules>
 
 
