@@ -25,15 +25,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5742f4cb-dc8d-4349-a22e-84f3ab4ed049" name="Default Changelist" comment="ssm">
+      <change afterPath="$PROJECT_DIR$/005-Spring事务管理分两种方式.xmind" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/04-Spring数据库开发.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/04-spring数据开发.xmind" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/05-Spring的事务管理.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/05-Spring的事务管理.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/106-springmvc-hello/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11-Spring MVC入门.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11-SpringMVC入门.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/105-spring-transaction/src/main/java/com/nateshao/jdbc/AccountDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/105-spring-transaction/src/main/java/com/nateshao/jdbc/AccountDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/105-spring-transaction/src/main/java/com/nateshao/jdbc/JdbcTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/105-spring-transaction/src/main/java/com/nateshao/jdbc/JdbcTemplateTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/105-spring-transaction/src/main/java/com/nateshao/jdbc/TransactionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/105-spring-transaction/src/main/java/com/nateshao/jdbc/TransactionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/105-spring-transaction/src/main/resources/applicationContext-annotation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/105-spring-transaction/src/main/resources/applicationContext-annotation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,10 +237,10 @@
     <list>
       <item itemvalue="JUnit.AccountDaoImplTest.findById" />
       <item itemvalue="JUnit.AccountDaoImplTest.findByAllTest" />
-      <item itemvalue="Tomcat Server.Tomcat 8.5.24" />
       <item itemvalue="JUnit.JdbcTemplateTest.findAllAccountTest (1)" />
       <item itemvalue="JUnit.TransactionTest.xmlTest" />
       <item itemvalue="JUnit.TransactionTest.annotationTest" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.24" />
     </list>
     <recent_temporary>
       <list>

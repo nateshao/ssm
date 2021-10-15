@@ -23,6 +23,7 @@
         <module>005-spring-transaction</module>
         <module>105-spring-transaction</module>
         <module>105-spring-transaction</module>
+        <module>106-springmvc-hello</module>
     </modules>
 
 
