@@ -13,9 +13,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Description:
  */
 @Controller
+@RequestMapping("/mvc")
 public class HelloController {
 
-    @RequestMapping("by")
+    @RequestMapping("/by")
     public String hello(){
 
         return "hello by";
