@@ -10,7 +10,6 @@
         <module name="ssm-combine" />
         <module name="002-spring-ioc" />
         <module name="001-spring-hello" />
-        <module name="106-springmvc-hello" />
         <module name="101-spring-ioc-di" />
         <module name="105-spring-transaction" />
         <module name="003-spring-aop-schema-advise" />
@@ -20,5 +19,8 @@
         <module name="102-spring-bean" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="106-springmvc-hello" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="106-springmvc-hello:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="69e898ac-3a7b-46e6-99af-a9884cc643bc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../005-Spring事务管理分两种方式.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-Spring数据库开发.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04-spring数据开发.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05-Spring的事务管理.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../05-Spring的事务管理.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-Spring MVC入门.xmind" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../06-SpringMVC入门.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/$CACHE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Spring_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Spring_MVC_5_2_3_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/nateshao/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../004-springmvc/004-springmvc-hello/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../004-springmvc/004-springmvc-hello/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../004-springmvc/004-springmvc-hello/004-springmvc-hello.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../004-springmvc/004-springmvc-hello/004-springmvc-hello.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../004-springmvc/004-springmvc-hello/out/artifacts/004_springmvc_hello_war_exploded/WEB-INF/classes/com/nateshao/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../004-springmvc/004-springmvc-hello/out/artifacts/004_springmvc_hello_war_exploded/WEB-INF/classes/com/nateshao/controller/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../004-springmvc/004-springmvc-hello/out/production/004-springmvc-hello/com/nateshao/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../004-springmvc/004-springmvc-hello/out/production/004-springmvc-hello/com/nateshao/controller/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../004-springmvc/004-springmvc-hello/src/com/nateshao/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../004-springmvc/004-springmvc-hello/src/com/nateshao/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/106-springmvc-hello.iml" beforeDir="false" afterPath="$PROJECT_DIR$/106-springmvc-hello.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nateshao/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springmvc-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nateshao/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/.idea/$CACHE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/.idea/artifacts/106_springmvc_hello_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/106_springmvc_hello_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/.idea/libraries/Spring_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/.idea/libraries/Spring_MVC_5_2_3_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/106-springmvc-hello.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/lib/javax.annotation.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/lib/javax.ejb.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/lib/javax.jms.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/lib/javax.persistence.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/lib/javax.resource.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/lib/javax.servlet.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/lib/javax.servlet.jsp.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/lib/javax.servlet.jsp.jstl.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/lib/javax.transaction.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/classes/com/nateshao/controller/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/classes/springmvc-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/jsp/hello.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-aspects-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-context-support-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-instrument-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-jms-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-messaging-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-orm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-oxm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-test-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/artifacts/106_springmvc_hello_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/production/106-springmvc-hello/com/nateshao/controller/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/out/production/106-springmvc-hello/springmvc-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/src/com/nateshao/controller/DemoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/src/com/nateshao/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/src/springmvc-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/jsp/hello.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/jsp/hello.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/aopalliance-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-aspects-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-context-support-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-instrument-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-jms-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-messaging-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-orm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-oxm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-test-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../106-springmvc/106-springmvc-hello/web/index.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\maven\maven_repository" />
+        <option name="mavenHome" value="E:/maven/apache-maven-3.5.2" />
+        <option name="userSettingsFile" value="E:\maven\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="1.8" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectId" id="1za25USLTxOqqebJD2QNKQK9j1s" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF" />
+    <property name="nodejs_interpreter_path" value="E:/nodejs/node" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\GitHub--Gitee\ssm\106-springmvc-hello\web\WEB-INF" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\GitHub--Gitee\ssm\106-springmvc-hello\web\WEB-INF" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 8.5.55" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.55" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/106_springmvc_hello_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="106-springmvc-hello:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/106_springmvc_hello_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_106-springmvc-hello_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="53729" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="106-springmvc-hello:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1634371936709">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1634371936709" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1634371832567">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1634371832567" />
+    <state x="445" y="153" key="FileChooserDialogImpl" timestamp="1634371782881">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="445" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1634371782881" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1634371797781">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1634371797781" />
+  </component>
+</project>
