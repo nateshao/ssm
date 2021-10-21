@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="007-springmvc-redirect:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/007_springmvc_redirect_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="007-springmvc-redirect/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="007-springmvc-redirect" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
