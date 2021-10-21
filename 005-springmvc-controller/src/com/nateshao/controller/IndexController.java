@@ -24,8 +24,4 @@ public class IndexController {
     public String register(){
         return "register";
     }
-
-
-
-
 }
