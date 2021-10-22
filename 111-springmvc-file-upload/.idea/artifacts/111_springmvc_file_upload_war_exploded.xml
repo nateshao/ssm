@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="111-springmvc-file-upload:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/111_springmvc_file_upload_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="111-springmvc-file-upload/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="111-springmvc-file-upload" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
