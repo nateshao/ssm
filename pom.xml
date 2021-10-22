@@ -21,6 +21,7 @@
         <module>105-spring-transaction</module>
         <module>105-spring-transaction</module>
         <module>112-mybatis-hello</module>
+        <module>113-mybatis-detail</module>
     </modules>
 
 

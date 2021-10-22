@@ -10,6 +10,7 @@
         <module name="ssm-combine" />
         <module name="002-spring-ioc" />
         <module name="001-spring-hello" />
+        <module name="113-mybatis-detail" />
         <module name="112-mybatis-hello" />
         <module name="101-spring-ioc-di" />
         <module name="105-spring-transaction" />
