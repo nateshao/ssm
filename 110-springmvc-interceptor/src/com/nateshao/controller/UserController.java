@@ -5,7 +5,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
 import javax.servlet.http.HttpSession;
 
 /**
@@ -37,7 +36,7 @@ public class UserController {
         String username = user.getUsername();
         String password = user.getPassword();
         // 此处模拟从数据库中获取用户名和密码后进行判断
-        if (username != null && username.equals("xiaoxue")
+        if (username != null && username.equals("nateshao")
                 && password != null && password.equals("123456")) {
             // 将用户对象添加到Session
             session.setAttribute("USER_SESSION", user);

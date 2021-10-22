@@ -3,7 +3,6 @@ package com.nateshao.interceptor;
 import com.nateshao.po.User;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
-
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -15,7 +14,7 @@ import javax.servlet.http.HttpSession;
  * @博客 https://nateshao.gitee.io
  * @GitHub https://github.com/nateshao
  * @Gitee https://gitee.com/nateshao
- * Description:
+ * Description: 登录拦截器
  */
 public class LoginInterceptor implements HandlerInterceptor {
     @Override

@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
  * @博客 https://nateshao.gitee.io
  * @GitHub https://github.com/nateshao
  * @Gitee https://gitee.com/nateshao
- * Description:
+ * Description: 以实现接口的方式定义拦截器
  */
 public class Interceptor1 implements HandlerInterceptor {
     @Override
