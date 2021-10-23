@@ -1,15 +1,5 @@
 package com.nateshao.test;
 
-/**
- * @date Created by 邵桐杰 on 2021/10/22 23:27
- * @微信公众号 程序员千羽
- * @个人网站 www.nateshao.cn
- * @博客 https://nateshao.gitee.io
- * @GitHub https://github.com/nateshao
- * @Gitee https://gitee.com/nateshao
- * Description:
- */
-
 import com.nateshao.po.Customer;
 import com.nateshao.po.User;
 import com.nateshao.utils.MybatisUtils;
@@ -17,9 +7,14 @@ import org.apache.ibatis.session.SqlSession;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
-
 /**
- * 入门程序测试类
+ * @date Created by 邵桐杰 on 2021/10/22 23:27
+ * @微信公众号 程序员千羽
+ * @个人网站 www.nateshao.cn
+ * @博客 https://nateshao.gitee.io
+ * @GitHub https://github.com/nateshao
+ * @Gitee https://gitee.com/nateshao
+ * Description: 入门程序测试类
  */
 public class MybatisTest {
     /**

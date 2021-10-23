@@ -13,9 +13,8 @@ import java.util.Properties;
  * @博客 https://nateshao.gitee.io
  * @GitHub https://github.com/nateshao
  * @Gitee https://gitee.com/nateshao
- * Description:
+ * Description: 自定义工厂类
  */
-//自定义工厂类
 public class MyObjectFactory extends DefaultObjectFactory {
     private static final long serialVersionUID = -4114845625429965832L;
 

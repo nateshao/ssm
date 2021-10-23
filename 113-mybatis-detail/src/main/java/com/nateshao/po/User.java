@@ -1,5 +1,9 @@
 package com.nateshao.po;
 
+import lombok.Data;
+
+import java.util.Date;
+
 /**
  * @date Created by 邵桐杰 on 2021/10/22 23:19
  * @微信公众号 程序员千羽
@@ -9,30 +13,12 @@ package com.nateshao.po;
  * @Gitee https://gitee.com/nateshao
  * Description:
  */
+@Data
 public class User {
     private Integer id;
-    private String name;
-    private Integer age;
-    public Integer getId() {
-        return id;
-    }
-    public void setId(Integer id) {
-        this.id = id;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public Integer getAge() {
-        return age;
-    }
-    public void setAge(Integer age) {
-        this.age = age;
-    }
-    @Override
-    public String toString() {
-        return "User [id=" + id + ", name=" + name + ", age=" + age + "]";
-    }
+    private String username;
+    private Date birthday;
+    private char sex;
+    private String address;
+
 }
