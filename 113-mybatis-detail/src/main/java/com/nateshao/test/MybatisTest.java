@@ -7,6 +7,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
+
 /**
  * @date Created by 邵桐杰 on 2021/10/22 23:27
  * @微信公众号 程序员千羽
@@ -32,6 +33,7 @@ public class MybatisTest {
         // 关闭SqlSession
         sqlSession.close();
     }
+
     /**
      * 2.根据用户名称来模糊查询用户信息列表
      */
@@ -49,11 +51,12 @@ public class MybatisTest {
         // 关闭SqlSession
         sqlSession.close();
     }
+
     /**
      * 3.添加客户
      */
     @Test
-    public void addCustomerTest(){
+    public void addCustomerTest() {
         // 获取SqlSession
         SqlSession sqlSession = MybatisUtils.getSession();
         Customer customer = new Customer();
@@ -68,19 +71,20 @@ public class MybatisTest {
                 + "CustomerMapper.insertCustomer", customer);
         // 输出插入数据的主键id值
         System.out.println(customer.getId());
-        if(rows > 0){
-            System.out.println("您成功插入了"+rows+"条数据！");
-        }else{
+        if (rows > 0) {
+            System.out.println("您成功插入了" + rows + "条数据！");
+        } else {
             System.out.println("执行插入操作失败！！！");
         }
         sqlSession.commit();
         sqlSession.close();
     }
+
     /**
      * 4.更新客户
      */
     @Test
-    public void updateCustomerTest() throws Exception{
+    public void updateCustomerTest() throws Exception {
         // 获取SqlSession
         SqlSession sqlSession = MybatisUtils.getSession();
         // SqlSession执行更新操作
@@ -94,9 +98,9 @@ public class MybatisTest {
         int rows = sqlSession.update("com.nateshao.mapper"
                 + ".CustomerMapper.updateCustomer", customer);
         // 通过返回结果判断更新操作是否执行成功
-        if(rows > 0){
-            System.out.println("您成功修改了"+rows+"条数据！");
-        }else{
+        if (rows > 0) {
+            System.out.println("您成功修改了" + rows + "条数据！");
+        } else {
             System.out.println("执行修改操作失败！！！");
         }
         // 提交事务
@@ -104,6 +108,7 @@ public class MybatisTest {
         // 关闭SqlSession
         sqlSession.close();
     }
+
     /**
      * 5.删除客户
      */
@@ -116,9 +121,9 @@ public class MybatisTest {
         int rows = sqlSession.delete("com.nateshao.mapper"
                 + ".CustomerMapper.deleteCustomer", 4);
         // 通过返回结果判断删除操作是否执行成功
-        if(rows > 0){
-            System.out.println("您成功删除了"+rows+"条数据！");
-        }else{
+        if (rows > 0) {
+            System.out.println("您成功删除了" + rows + "条数据！");
+        } else {
             System.out.println("执行删除操作失败！！！");
         }
         // 提交事务
