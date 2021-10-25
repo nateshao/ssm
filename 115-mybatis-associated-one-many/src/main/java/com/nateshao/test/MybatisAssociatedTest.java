@@ -62,6 +62,7 @@ public class MybatisAssociatedTest {
                 + "UserMapper.findUserWithOrders", 1);
         // 3、输出查询结果信息
         System.out.println(user);
+//        System.out.println(JSON.toJSON(user));
         // 4、关闭SqlSession
         session.close();
     }

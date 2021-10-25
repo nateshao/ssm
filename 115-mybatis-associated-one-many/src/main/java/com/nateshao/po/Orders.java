@@ -1,9 +1,7 @@
 package com.nateshao.po;
 
 import lombok.Data;
-
 import java.util.List;
-
 /**
  * @date Created by 邵桐杰 on 2021/10/25 11:27
  * @微信公众号 程序员千羽
@@ -19,5 +17,4 @@ public class Orders {
     private String number;//订单编号
     //关联商品集合信息
     private List<Product> productList;
-
 }
