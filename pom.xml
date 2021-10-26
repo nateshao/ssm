@@ -24,6 +24,7 @@
         <module>113-mybatis-detail</module>
         <module>114-mybatis-dynamic-sql</module>
         <module>115-mybatis-associated-one-many</module>
+        <module>116-mybatis-spring</module>
     </modules>
 
 
