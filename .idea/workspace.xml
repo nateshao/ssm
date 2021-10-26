@@ -25,27 +25,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5742f4cb-dc8d-4349-a22e-84f3ab4ed049" name="Default Changelist" comment="一对一，一对多，多对多映射">
-      <change afterPath="$PROJECT_DIR$/116-mybatis-spring/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/116-mybatis-spring/src/main/java/com/nateshao/dao/CustomerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/116-mybatis-spring/src/main/java/com/nateshao/dao/impl/CustomerDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/116-mybatis-spring/src/main/java/com/nateshao/mapper/CustomerMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/116-mybatis-spring/src/main/java/com/nateshao/po/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/116-mybatis-spring/src/main/java/com/nateshao/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/116-mybatis-spring/src/main/java/com/nateshao/service/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/116-mybatis-spring/src/main/java/com/nateshao/test/DaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/116-mybatis-spring/src/main/java/com/nateshao/test/TransactionTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/116-mybatis-spring/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/116-mybatis-spring/src/main/resources/db.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/116-mybatis-spring/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/116-mybatis-spring/src/main/resources/mapper/CustomerMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/116-mybatis-spring/src/main/resources/mapper/CustomerMapperInterface.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/116-mybatis-spring/src/main/resources/mybatis-config.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/14-MyBatis动态SQL.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/15-MyBatis的关联映射.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/16-MyBatis与Spring整合.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17-SSM框架整合.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20-SSM框架整合.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssm-combine/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ssm-combine/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -329,22 +315,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1635129348216" />
-    <state width="1492" height="223" key="GridCell.Tab.0.bottom" timestamp="1635237889842">
+    <state width="1492" height="57" key="GridCell.Tab.0.bottom" timestamp="1635239719696">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="223" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635237889842" />
-    <state width="1492" height="223" key="GridCell.Tab.0.center" timestamp="1635237889842">
+    <state width="1492" height="57" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1635239719696" />
+    <state width="1492" height="57" key="GridCell.Tab.0.center" timestamp="1635239719696">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="223" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1635237889842" />
-    <state width="1492" height="223" key="GridCell.Tab.0.left" timestamp="1635237889842">
+    <state width="1492" height="57" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1635239719696" />
+    <state width="1492" height="57" key="GridCell.Tab.0.left" timestamp="1635239719695">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="223" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1635237889842" />
-    <state width="1492" height="223" key="GridCell.Tab.0.right" timestamp="1635237889842">
+    <state width="1492" height="57" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1635239719695" />
+    <state width="1492" height="57" key="GridCell.Tab.0.right" timestamp="1635239719696">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="223" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1635237889842" />
+    <state width="1492" height="57" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1635239719696" />
     <state width="1492" height="261" key="GridCell.Tab.1.bottom" timestamp="1634138746697">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -385,10 +371,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1635130957683" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1635134616367">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1635238110748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1635134616367" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1635238110748" />
     <state x="565" y="190" key="chooseDestDirectoryDialog" timestamp="1634916424041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -401,10 +387,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="468" y="115" width="600" height="594" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1635231631724" />
-    <state x="364" y="0" width="1069" height="824" key="new project wizard" timestamp="1635220786998">
+    <state x="364" y="0" width="1069" height="824" key="new project wizard" timestamp="1635239692260">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="364" y="0" width="1069" height="824" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1635220786998" />
+    <state x="364" y="0" width="1069" height="824" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1635239692260" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1634294391517">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

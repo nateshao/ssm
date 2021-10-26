@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="117-ssm-combine:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/117_ssm_combine_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="117-ssm-combine/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="117-ssm-combine" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

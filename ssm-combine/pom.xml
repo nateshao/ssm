@@ -29,6 +29,11 @@
             <artifactId>spring-webmvc</artifactId>
             <version>5.0.11.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.3.8</version>
+        </dependency>
 
         <!-- Spring JDBC -->
         <dependency>
@@ -97,6 +102,9 @@
             <version>1.18.6</version>
             <scope>provided</scope>
         </dependency>
+
+
+
     </dependencies>
 
     <build>
