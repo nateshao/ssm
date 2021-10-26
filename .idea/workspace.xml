@@ -24,7 +24,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5742f4cb-dc8d-4349-a22e-84f3ab4ed049" name="Default Changelist" comment="一对一，一对多，多对多映射" />
+    <list default="true" id="5742f4cb-dc8d-4349-a22e-84f3ab4ed049" name="Default Changelist" comment="一对一，一对多，多对多映射">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/117-ssm-combine/out/artifacts/117_ssm_combine_war_exploded/WEB-INF/classes/com/nateshao/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/117-ssm-combine/out/artifacts/117_ssm_combine_war_exploded/WEB-INF/classes/com/nateshao/controller/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/117-ssm-combine/out/production/117-ssm-combine/com/nateshao/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/117-ssm-combine/out/production/117-ssm-combine/com/nateshao/controller/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/117-ssm-combine/src/com/nateshao/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/117-ssm-combine/src/com/nateshao/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17-SSM框架整合.md" beforeDir="false" afterPath="$PROJECT_DIR$/17-SSM框架整合.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

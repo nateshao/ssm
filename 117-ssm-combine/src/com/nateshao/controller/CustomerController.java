@@ -26,13 +26,13 @@ public class CustomerController {
     /**
      * 根据id查询客户详情
      */
-//    @RequestMapping("/findCustomerById")
-//    public String findCustomerById(Integer id, Model model) {
-//        Customer customer = customerService.findCustomerById(id);
-//        model.addAttribute("customer", customer);
-//        //返回客户信息展示页面
-//        return "customer";
-//    }
+    @RequestMapping("/findCustomerById")
+    public String findCustomerById(Integer id, Model model) {
+        Customer customer = customerService.findCustomerById(id);
+        model.addAttribute("customer", customer);
+        //返回客户信息展示页面
+        return "customer";
+    }
     /**
      * 根据id查询客户详情
      */
