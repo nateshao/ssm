@@ -10,6 +10,8 @@
           <root url="file://$MODULE_DIR$/SSM-All-ch17/WebContent" relative="/" />
         </webroots>
         <sourceRoots>
+          <root url="file://$MODULE_DIR$/104-springmvc-demo/src" />
+          <root url="file://$MODULE_DIR$/104-springmvc-demo/web" />
           <root url="file://$MODULE_DIR$/src/main/java" />
           <root url="file://$MODULE_DIR$/src/main/resources" />
         </sourceRoots>
@@ -43,19 +45,5 @@
         </sourceRoots>
       </configuration>
     </facet>
-  </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5">
-    <output url="file://$MODULE_DIR$/target/classes" />
-    <output-test url="file://$MODULE_DIR$/target/test-classes" />
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/104-springmvc-demo/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/104-springmvc-demo/web" type="java-resource" />
-      <excludeFolder url="file://$MODULE_DIR$/target" />
-    </content>
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
