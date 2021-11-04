@@ -14,8 +14,8 @@ import javax.annotation.Resource;
  * Description:
  */
 @Service("userService")
-public class UserServiceImpl implements UserService{
-    @Resource(name="userDao")
+public class UserServiceImpl implements UserService {
+    @Resource(name = "userDao")
     private UserDao userDao;
 
     @Override
@@ -24,6 +24,7 @@ public class UserServiceImpl implements UserService{
         this.userDao.save();
         System.out.println("userservice....save...");
     }
+
     public void setUserDao(UserDao userDao) {
         this.userDao = userDao;
     }

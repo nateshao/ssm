@@ -18,7 +18,7 @@ public class DemoController {
     @RequestMapping("/testModel")
     public ModelAndView testModel() {
         ModelAndView mav = new ModelAndView();
-        mav.addObject("success","testModel  nateshao");
+        mav.addObject("success", "testModel  nateshao");
         mav.setViewName("hello");
         return mav;
     }

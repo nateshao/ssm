@@ -10,6 +10,7 @@
         <module name="003-spring-injection" />
         <module name="113-mybatis-detail" />
         <module name="116-mybatis-spring" />
+        <module name="010-mybatis-hello" />
         <module name="101-spring-ioc-di" />
         <module name="002-spring-ioc" />
         <module name="115-mybatis-associated-one-many" />
@@ -18,12 +19,37 @@
         <module name="103-spring-aop" />
         <module name="102-spring-bean" />
         <module name="105-spring-transaction" />
+        <module name="ssm-and-boot" />
         <module name="104-spring-jdbc" />
         <module name="003-spring-aop-schema-advise" />
         <module name="114-mybatis-dynamic-sql" />
         <module name="ssm-combine" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="001-spring-hello" target="1.8" />
+      <module name="002-spring-ioc" target="1.8" />
+      <module name="003-spring-aop-schema-advise" target="1.8" />
+      <module name="003-spring-injection" target="1.8" />
+      <module name="010-mybatis-demo" target="1.5" />
+      <module name="101-spring-ioc-di" target="1.7" />
+      <module name="102-spring-bean" target="1.7" />
+      <module name="103-spring-aop" target="1.7" />
+      <module name="104-spring-jdbc" target="1.7" />
+      <module name="105-spring-transaction" target="1.7" />
+      <module name="112-mybatis-hello" target="1.5" />
+      <module name="113-mybatis-detail" target="1.5" />
+      <module name="114-mybatis-dynamic-sql" target="1.5" />
+      <module name="115-mybatis-associated-one-many" target="1.5" />
+      <module name="116-mybatis-spring" target="1.5" />
+      <module name="ssm-and-boot" target="1.8" />
+      <module name="ssm-combine" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="010-mybatis-hello" options="-parameters" />
+      <module name="ssm-and-boot" options="-parameters" />
+    </option>
   </component>
 </project>

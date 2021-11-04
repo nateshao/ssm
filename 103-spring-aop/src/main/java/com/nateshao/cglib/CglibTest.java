@@ -16,7 +16,7 @@ public class CglibTest {
         // 创建目标对象
         UserDao userDao = new UserDao();
         // 获取增强后的目标对象
-        UserDao userDao1 = (UserDao)cglibProxy.createProxy(userDao);
+        UserDao userDao1 = (UserDao) cglibProxy.createProxy(userDao);
         // 执行方法
         userDao1.addUser();
         userDao1.deleteUser();

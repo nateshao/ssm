@@ -10,24 +10,24 @@
     <bean id="dataSource"
           class="org.apache.commons.dbcp2.BasicDataSource">
         <!--数据库驱动 -->
-        <property name="driverClassName" value="${jdbc.driver}" />
+        <property name="driverClassName" value="${jdbc.driver}"/>
         <!--连接数据库的url -->
-        <property name="url" value="${jdbc.url}" />
+        <property name="url" value="${jdbc.url}"/>
         <!--连接数据库的用户名 -->
-        <property name="username" value="${jdbc.username}" />
+        <property name="username" value="${jdbc.username}"/>
         <!--连接数据库的密码 -->
-        <property name="password" value="${jdbc.password}" />
+        <property name="password" value="${jdbc.password}"/>
         <!--最大连接数 -->
-        <property name="maxTotal" value="${jdbc.maxTotal}" />
+        <property name="maxTotal" value="${jdbc.maxTotal}"/>
         <!--最大空闲连接  -->
-        <property name="maxIdle" value="${jdbc.maxIdle}" />
+        <property name="maxIdle" value="${jdbc.maxIdle}"/>
         <!--初始化连接数  -->
-        <property name="initialSize" value="${jdbc.initialSize}" />
+        <property name="initialSize" value="${jdbc.initialSize}"/>
     </bean>
     <!-- 事务管理器，依赖于数据源 -->
     <bean id="transactionManager" class=
             "org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSource" />
+        <property name="dataSource" ref="dataSource"/>
     </bean>
     <!-- 开启事务注解 -->
     <tx:annotation-driven transaction-manager="transactionManager"/>
@@ -35,26 +35,26 @@
     <bean id="sqlSessionFactory"
           class="org.mybatis.spring.SqlSessionFactoryBean">
         <!--注入数据源 -->
-        <property name="dataSource" ref="dataSource" />
+        <property name="dataSource" ref="dataSource"/>
         <!--指定核MyBatis心配置文件位置 -->
-<!--        <property name="configLocation" value="classpath:WEB-INF/mybatis-config.xml" />-->
-        <property name="configLocation" value="classpath:mybatis-config.xml" />
+        <!--        <property name="configLocation" value="classpath:WEB-INF/mybatis-config.xml" />-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
     </bean>
     <!-- 配置mapper扫描器 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="com.nateshao.dao"/>
     </bean>
     <!-- 扫描Service -->
-    <context:component-scan base-package="com.nateshao.service" />
+    <context:component-scan base-package="com.nateshao.service"/>
 
     <!-- 配置包扫描器，扫描@Controller注解的类 -->
-    <context:component-scan base-package="com.nateshao.controller" />
+    <context:component-scan base-package="com.nateshao.controller"/>
     <!-- 加载注解驱动 -->
-    <mvc:annotation-driven />
+    <mvc:annotation-driven/>
     <!-- 配置视图解析器 -->
     <bean class=
                   "org.springframework.web.servlet.view.InternalResourceViewResolver">
-        <property name="prefix" value="/WEB-INF/jsp/" />
-        <property name="suffix" value=".jsp" />
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
     </bean>
 </beans>

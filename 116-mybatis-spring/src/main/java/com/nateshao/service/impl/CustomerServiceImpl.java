@@ -22,6 +22,7 @@ public class CustomerServiceImpl implements CustomerService {
     //注解注入CustomerMapper
     @Autowired
     private CustomerMapper customerMapper;
+
     //添加客户
     public void addCustomer(Customer customer) {
         this.customerMapper.addCustomer(customer);

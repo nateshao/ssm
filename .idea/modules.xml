@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/001-spring-hello/001-spring-hello.iml" filepath="$PROJECT_DIR$/001-spring-hello/001-spring-hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/002-spring-ioc/002-spring-ioc.iml" filepath="$PROJECT_DIR$/002-spring-ioc/002-spring-ioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/003-spring-aop-schema-advise/003-spring-aop-schema-advise.iml" filepath="$PROJECT_DIR$/003-spring-aop-schema-advise/003-spring-aop-schema-advise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/003-spring-injection/003-spring-injection.iml" filepath="$PROJECT_DIR$/003-spring-injection/003-spring-injection.iml" />
       <module fileurl="file://$PROJECT_DIR$/004-springmvc-hello/004-springmvc-hello.iml" filepath="$PROJECT_DIR$/004-springmvc-hello/004-springmvc-hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/101-spring-ioc-di/101-spring-ioc-di.iml" filepath="$PROJECT_DIR$/101-spring-ioc-di/101-spring-ioc-di.iml" />
+      <module fileurl="file://$PROJECT_DIR$/102-spring-bean/102-spring-bean.iml" filepath="$PROJECT_DIR$/102-spring-bean/102-spring-bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/103-spring-aop/103-spring-aop.iml" filepath="$PROJECT_DIR$/103-spring-aop/103-spring-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/104-spring-jdbc/104-spring-jdbc.iml" filepath="$PROJECT_DIR$/104-spring-jdbc/104-spring-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/105-spring-transaction/105-spring-transaction.iml" filepath="$PROJECT_DIR$/105-spring-transaction/105-spring-transaction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/112-mybatis-hello/112-mybatis-hello.iml" filepath="$PROJECT_DIR$/112-mybatis-hello/112-mybatis-hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/113-mybatis-detail/113-mybatis-detail.iml" filepath="$PROJECT_DIR$/113-mybatis-detail/113-mybatis-detail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/114-mybatis-dynamic-sql/114-mybatis-dynamic-sql.iml" filepath="$PROJECT_DIR$/114-mybatis-dynamic-sql/114-mybatis-dynamic-sql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/115-mybatis-associated-one-many/115-mybatis-associated-one-many.iml" filepath="$PROJECT_DIR$/115-mybatis-associated-one-many/115-mybatis-associated-one-many.iml" />
+      <module fileurl="file://$PROJECT_DIR$/116-mybatis-spring/116-mybatis-spring.iml" filepath="$PROJECT_DIR$/116-mybatis-spring/116-mybatis-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-and-boot.iml" filepath="$PROJECT_DIR$/ssm-and-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-combine/ssm-combine.iml" filepath="$PROJECT_DIR$/ssm-combine/ssm-combine.iml" />
     </modules>
   </component>
 </project>

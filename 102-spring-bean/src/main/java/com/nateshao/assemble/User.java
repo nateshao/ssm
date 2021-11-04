@@ -15,6 +15,7 @@ public class User {
     private String username;
     private int password;
     private List<String> list;
+
     /**
      * 1.使用构造注入
      * 1.1提供带所有参数的有参构造方法。
@@ -25,6 +26,7 @@ public class User {
         this.password = password;
         this.list = list;
     }
+
     /**
      * 2.使用设值注入
      * 2.1提供默认空参构造方法 ;
@@ -33,15 +35,19 @@ public class User {
     public User() {
         super();
     }
+
     public void setUsername(String username) {
         this.username = username;
     }
+
     public void setPassword(Integer password) {
         this.password = password;
     }
+
     public void setList(List<String> list) {
         this.list = list;
     }
+
     @Override
     public String toString() {
         return "User [username=" + username + ", password=" + password +

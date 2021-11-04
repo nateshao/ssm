@@ -17,12 +17,13 @@ import static org.junit.Assert.*;
  */
 public class StudentTest {
     @Test
-    public void test01(){
+    public void test01() {
         ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         Student student = (Student) context.getBean("student");
         System.out.println(student.getName());
 
     }
+
     @Test
     public void setName() {
     }

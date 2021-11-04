@@ -4,17 +4,17 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<!--    <bean id="student" class="com.nateshao.pojo.Student">-->
-<!--        <property name="name" value="小明"/>-->
-<!--    </bean>-->
+    <!--    <bean id="student" class="com.nateshao.pojo.Student">-->
+    <!--        <property name="name" value="小明"/>-->
+    <!--    </bean>-->
     <bean id="addr" class="com.nateshao.pojo.Address">
         <property name="address" value="重庆"/>
     </bean>
 
-<!--    <bean id="student" class="com.nateshao.pojo.Student">-->
-<!--        <property name="name" value="小明"/>-->
-<!--        <property name="address" ref="addr"/>-->
-<!--    </bean>-->
+    <!--    <bean id="student" class="com.nateshao.pojo.Student">-->
+    <!--        <property name="name" value="小明"/>-->
+    <!--        <property name="address" ref="addr"/>-->
+    <!--    </bean>-->
 
     <bean id="student" class="com.nateshao.pojo.Student">
         <property name="name" value="小明"/>
@@ -49,7 +49,7 @@
             </set>
         </property>
 
-<!--        <property name="wife"><null/></property>-->
+        <!--        <property name="wife"><null/></property>-->
 
         <property name="info">
             <props>

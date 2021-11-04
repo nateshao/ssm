@@ -16,14 +16,17 @@ import java.util.List;
 public interface AccountDao {
     // 添加
     public int addAccount(Account account);
+
     // 修改
     public int updateAccount(int id);
+
     // 删除
     public int deleteAccount(int id);
 
     // 查询
     public List<Account> findById();
-   // 查询
+
+    // 查询
     public List<Account> findByAll();
 
 

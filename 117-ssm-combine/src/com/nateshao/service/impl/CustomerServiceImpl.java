@@ -24,6 +24,7 @@ public class CustomerServiceImpl implements CustomerService {
     //注解注入CustomerDao
     @Autowired
     private CustomerDao customerDao;
+
     //查询客户
     public Customer findCustomerById(Integer id) {
         return this.customerDao.findCustomerById(id);

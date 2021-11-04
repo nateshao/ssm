@@ -64,7 +64,7 @@
             <if test="username !=null and username !=''">
                 username=#{username},
             </if>
-               <if test="jobs !=null and jobs !=''">
+            <if test="jobs !=null and jobs !=''">
                 jobs=#{jobs},
             </if>
             <if test="phone !=null and phone !=''">

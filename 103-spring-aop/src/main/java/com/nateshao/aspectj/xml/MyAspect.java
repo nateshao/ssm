@@ -2,6 +2,7 @@ package com.nateshao.aspectj.xml;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
+
 /**
  * @date Created by 邵桐杰 on 2021/10/14 19:56
  * @微信公众号 程序员千羽
@@ -15,16 +16,18 @@ public class MyAspect {
     // 前置通知
     public void myBefore(JoinPoint joinPoint) {
         System.out.print("前置通知 ：模拟执行权限检查...,");
-        System.out.print("目标类是："+joinPoint.getTarget() );
+        System.out.print("目标类是：" + joinPoint.getTarget());
         System.out.println(",被织入增强处理的目标方法为："
-                +joinPoint.getSignature().getName());
+                + joinPoint.getSignature().getName());
     }
+
     // 后置通知
     public void myAfterReturning(JoinPoint joinPoint) {
-        System.out.print("后置通知：模拟记录日志...," );
+        System.out.print("后置通知：模拟记录日志...,");
         System.out.println("被织入增强处理的目标方法为："
                 + joinPoint.getSignature().getName());
     }
+
     /**
      * 环绕通知
      * ProceedingJoinPoint 是JoinPoint子接口，表示可以执行目标方法
@@ -42,10 +45,12 @@ public class MyAspect {
         System.out.println("环绕结束：执行目标方法之后，模拟关闭事务...");
         return obj;
     }
+
     // 异常通知
     public void myAfterThrowing(JoinPoint joinPoint, Throwable e) {
         System.out.println("异常通知：" + "出错了" + e.getMessage());
     }
+
     // 最终通知
     public void myAfter() {
         System.out.println("最终通知：模拟方法结束后的释放资源...");
