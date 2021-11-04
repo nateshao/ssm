@@ -16,10 +16,10 @@ import javax.annotation.Resource;
 @Controller("userController")
 public class UserController {
 
-    @Resource(name="userService")
+    @Resource(name = "userService")
     private UserService userService;
 
-    public void save(){
+    public void save() {
         this.userService.save();
         System.out.println("userController...save...");
     }

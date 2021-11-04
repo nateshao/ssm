@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8"%>
+         pageEncoding="UTF-8" %>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -22,22 +22,22 @@
         </tr>
         <tr>
             <td>
-                <input name="users[0].id" value="1" type="checkbox" />
+                <input name="users[0].id" value="1" type="checkbox"/>
             </td>
             <td>
-                <input name="users[0].username" value="tome" type="text" />
+                <input name="users[0].username" value="tome" type="text"/>
             </td>
         </tr>
         <tr>
             <td>
-                <input name="users[1].id" value="2" type="checkbox" />
+                <input name="users[1].id" value="2" type="checkbox"/>
             </td>
             <td>
-                <input name="users[1].username" value="jack" type="text" />
+                <input name="users[1].username" value="jack" type="text"/>
             </td>
         </tr>
     </table>
-    <input type="submit" value="修改" />
+    <input type="submit" value="修改"/>
 </form>
 </body>
 </html>

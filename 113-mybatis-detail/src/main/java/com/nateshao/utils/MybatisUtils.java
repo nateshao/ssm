@@ -4,6 +4,7 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+
 import java.io.Reader;
 
 /**
@@ -17,6 +18,7 @@ import java.io.Reader;
  */
 public class MybatisUtils {
     private static SqlSessionFactory sqlSessionFactory = null;
+
     // 初始化SqlSessionFactory对象
     static {
         try {
@@ -30,6 +32,7 @@ public class MybatisUtils {
             e.printStackTrace();
         }
     }
+
     // 获取SqlSession对象的静态方法
     public static SqlSession getSession() {
         return sqlSessionFactory.openSession();

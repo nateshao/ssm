@@ -5,8 +5,8 @@
     <!-- 嵌套查询：通过执行另外一条SQL映射语句来返回预期的特殊类型 -->
     <select id="findPersonById" parameterType="Integer"
             resultMap="IdCardWithPersonResult">
-		SELECT * from tb_person where id=#{id}
-	</select>
+        SELECT * from tb_person where id=#{id}
+    </select>
     <resultMap type="Person" id="IdCardWithPersonResult">
         <id property="id" column="id"/>
         <result property="name" column="name"/>
@@ -20,11 +20,11 @@
     <!-- 嵌套结果：使用嵌套结果映射来处理重复的联合结果的子集 -->
     <select id="findPersonById2" parameterType="Integer"
             resultMap="IdCardWithPersonResult2">
-	    SELECT p.*,idcard.code
-	    from tb_person p,tb_idcard idcard
-	    where p.card_id=idcard.id 
-	    and p.id= #{id}
-	</select>
+        SELECT p.*,idcard.code
+        from tb_person p,tb_idcard idcard
+        where p.card_id=idcard.id
+        and p.id= #{id}
+    </select>
     <resultMap type="Person" id="IdCardWithPersonResult2">
         <id property="id" column="id"/>
         <result property="name" column="name"/>

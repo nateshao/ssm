@@ -12,14 +12,14 @@
     <!--2.根据客户名模糊查询客户信息列表 -->
     <select id="findCustomerByName" parameterType="String"
             resultType="com.nateshao.po.Customer">
-		select * from t_customer where username like '%${value}%'
-	</select>
+        select * from t_customer where username like '%${value}%'
+    </select>
     <!-- 3.添加客户信息 -->
     <insert id="addCustomer" parameterType="com.nateshao.po.Customer"
             keyProperty="id" useGeneratedKeys="true">
-		insert into t_customer(username,jobs,phone)
-		values(#{username},#{jobs},#{phone})
-	</insert>
+        insert into t_customer(username,jobs,phone)
+        values(#{username},#{jobs},#{phone})
+    </insert>
     <!-- 对于不支持自动生成主键的数据库，或取消自主增长规则的数据库可以自定义主键生成规则 -->
     <insert id="insertCustomer" parameterType="com.nateshao.po.Customer">
         <selectKey keyProperty="id" resultType="Integer" order="BEFORE">
@@ -30,14 +30,14 @@
     </insert>
     <!-- 4.更新客户信息 -->
     <update id="updateCustomer" parameterType="com.nateshao.po.Customer">
-		update t_customer 
-		set username=#{username},jobs=#{jobs},phone=#{phone}
-		where id=#{id}
-	</update>
+        update t_customer
+        set username=#{username},jobs=#{jobs},phone=#{phone}
+        where id=#{id}
+    </update>
     <!-- 5.删除客户信息 -->
     <delete id="deleteCustomer" parameterType="Integer">
-		delete from t_customer where id=#{id}
-	</delete>
+        delete from t_customer where id=#{id}
+    </delete>
 
     <!--定义代码片段 -->
     <!-- 	<sql id="customerColumns">id,username,jobs,phone</sql> -->
@@ -50,8 +50,8 @@
 
     <!--定义表的前缀名 -->
     <sql id="tablename">
-		${prefix}customer
-	</sql>
+        ${prefix}customer
+    </sql>
     <!--定义要查询的表 -->
     <sql id="someinclude">
         from
@@ -59,8 +59,8 @@
     </sql>
     <!--定义查询列 -->
     <sql id="customerColumns">
-	   id,username,jobs,phone
-	</sql>
+        id,username,jobs,phone
+    </sql>
     <!--根据id查询客户信息 -->
     <select id="findCustomerById" parameterType="Integer"
             resultType="com.nateshao.po.Customer">

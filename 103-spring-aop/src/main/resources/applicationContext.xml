@@ -4,21 +4,21 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
     <!-- 1 目标类 -->
-    <bean id="userDao" class="com.nateshao.jdk.UserDaoImpl" />
+    <bean id="userDao" class="com.nateshao.jdk.UserDaoImpl"/>
     <!-- 2 切面类 -->
-    <bean id="myAspect" class="com.nateshao.factorybean.MyAspect" />
+    <bean id="myAspect" class="com.nateshao.factorybean.MyAspect"/>
     <!-- 3 使用Spring代理工厂定义一个名称为userDaoProxy的代理对象 -->
     <bean id="userDaoProxy"
           class="org.springframework.aop.framework.ProxyFactoryBean">
         <!-- 3.1 指定代理实现的接口-->
         <property name="proxyInterfaces"
-                  value="com.nateshao.jdk.UserDao" />
+                  value="com.nateshao.jdk.UserDao"/>
         <!-- 3.2 指定目标对象 -->
-        <property name="target" ref="userDao" />
+        <property name="target" ref="userDao"/>
         <!-- 3.3 指定切面,织入环绕通知 -->
-        <property name="interceptorNames" value="myAspect" />
+        <property name="interceptorNames" value="myAspect"/>
         <!-- 3.4 指定代理方式，true：使用cglib，false(默认)：使用jdk动态代理 -->
-        <property name="proxyTargetClass" value="true" />
+        <property name="proxyTargetClass" value="true"/>
     </bean>
 </beans>
 

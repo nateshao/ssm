@@ -11,6 +11,6 @@
         <result property="address" column="address"/>
     </resultMap>
     <select id="findAllUser" resultMap="resultMap">
-		select * from user
-	</select>
+        select * from user
+    </select>
 </mapper>

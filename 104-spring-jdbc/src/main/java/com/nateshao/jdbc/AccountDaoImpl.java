@@ -3,6 +3,7 @@ package com.nateshao.jdbc;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+
 import java.util.List;
 
 /**
@@ -24,6 +25,7 @@ public class AccountDaoImpl implements AccountDao {
 
     /**
      * 添加账户
+     *
      * @param account
      * @return
      */
@@ -42,6 +44,7 @@ public class AccountDaoImpl implements AccountDao {
 
     /**
      * 更新账户
+     *
      * @param account
      * @return
      */
@@ -61,6 +64,7 @@ public class AccountDaoImpl implements AccountDao {
 
     /**
      * 删除账户
+     *
      * @param id
      * @return
      */
@@ -73,9 +77,9 @@ public class AccountDaoImpl implements AccountDao {
     }
 
 
-
     /**
      * 通过id查询账户数据信息
+     *
      * @param id
      * @return
      */
@@ -91,6 +95,7 @@ public class AccountDaoImpl implements AccountDao {
 
     /**
      * 查询所有账户信息
+     *
      * @return
      */
     public List<Account> findAllAccount() {

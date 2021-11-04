@@ -16,12 +16,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class IndexController {
 
     @RequestMapping("/isLogin")
-    public String login(){
+    public String login() {
         return "forword:/isLogin";
     }
 
     @RequestMapping("/isRegister")
-    public String isRegister(){
+    public String isRegister() {
         return "redirect:/isRegister";
     }
 

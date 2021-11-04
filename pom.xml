@@ -12,6 +12,7 @@
         <module>001-spring-hello</module>
         <module>002-spring-ioc</module>
         <module>003-spring-injection</module>
+        <module>010-mybatis-hello</module>
         <module>ssm-combine</module>
         <module>003-spring-aop-schema-advise</module>
         <module>102-spring-bean</module>

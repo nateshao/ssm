@@ -33,6 +33,7 @@ public class CustomerController {
         //返回客户信息展示页面
         return "customer";
     }
+
     /**
      * 根据id查询客户详情
      */

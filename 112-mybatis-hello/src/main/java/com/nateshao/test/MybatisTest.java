@@ -6,6 +6,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.jupiter.api.Test;
+import org.springframework.transaction.annotation.Transactional;
+
 import java.io.InputStream;
 import java.util.List;
 
@@ -78,6 +80,7 @@ public class MybatisTest {
      * @throws Exception
      */
     @Test
+    @Transactional
     public void addCustomerTest() throws Exception {
         // 1、读取配置文件
         String resource = "mybatis-config.xml";
@@ -114,6 +117,7 @@ public class MybatisTest {
      * @throws Exception
      */
     @Test
+    @Transactional
     public void updateCustomerTest() throws Exception {
         // 1、读取配置文件
         String resource = "mybatis-config.xml";
@@ -151,6 +155,7 @@ public class MybatisTest {
      * @throws Exception
      */
     @Test
+    @Transactional
     public void deleteCustomerTest() throws Exception {
         // 1、读取配置文件
         String resource = "mybatis-config.xml";

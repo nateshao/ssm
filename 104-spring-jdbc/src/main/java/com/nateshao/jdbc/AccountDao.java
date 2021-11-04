@@ -25,5 +25,5 @@ public interface AccountDao {
     public List<Account> findAllAccount();
 
     // 通过id查询
-    public  Account  findAccountById(int i);
+    public Account findAccountById(int i);
 }

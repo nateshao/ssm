@@ -10,6 +10,7 @@
         <module name="003-spring-injection" />
         <module name="113-mybatis-detail" />
         <module name="116-mybatis-spring" />
+        <module name="010-mybatis-hello" />
         <module name="101-spring-ioc-di" />
         <module name="002-spring-ioc" />
         <module name="115-mybatis-associated-one-many" />
@@ -25,6 +26,15 @@
         <module name="ssm-combine" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="8">
+      <module name="010-mybatis-demo" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="010-mybatis-hello" options="-parameters" />
+      <module name="ssm-and-boot" options="-parameters" />
+    </option>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

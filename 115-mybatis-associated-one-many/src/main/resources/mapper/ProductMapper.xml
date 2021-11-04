@@ -4,8 +4,8 @@
 <mapper namespace="com.nateshao.mapper.ProductMapper">
     <select id="findProductById" parameterType="Integer"
             resultType="Product">
-		SELECT * from tb_product where id IN(
-		   SELECT product_id FROM tb_ordersitem  WHERE orders_id = #{id}
-		)
-	</select>
+        SELECT * from tb_product where id IN(
+        SELECT product_id FROM tb_ordersitem WHERE orders_id = #{id}
+        )
+    </select>
 </mapper>

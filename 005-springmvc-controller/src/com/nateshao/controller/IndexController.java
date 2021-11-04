@@ -16,12 +16,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class IndexController {
 
     @RequestMapping("/login")
-    public String login(){
+    public String login() {
         return "login";
     }
 
     @RequestMapping("/register")
-    public String register(){
+    public String register() {
         return "register";
     }
 }

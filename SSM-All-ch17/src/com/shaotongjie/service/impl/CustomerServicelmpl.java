@@ -12,12 +12,13 @@ import com.shaotongjie.service.CustomerService;
 @Transactional
 public class CustomerServicelmpl implements CustomerService {
 
-	@Autowired
-	private CustomerDao customerDao;
-	@Override
-	public Customer findCustomerById(Integer id) {
-		// TODO Auto-generated method stub
-		return this.customerDao.findCustomerByld(id);
-	}
+    @Autowired
+    private CustomerDao customerDao;
+
+    @Override
+    public Customer findCustomerById(Integer id) {
+        // TODO Auto-generated method stub
+        return this.customerDao.findCustomerByld(id);
+    }
 
 }

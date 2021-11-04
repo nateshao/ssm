@@ -7,13 +7,13 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title>$Title$</title>
-  </head>
-  <body>
+</head>
+<body>
 <%-- 用EL表达式获取后台处理器封装的信息 --%>
-  $END$
-  </body>
+$END$
+</body>
 </html>
 
 

@@ -10,6 +10,8 @@
           <root url="file://$MODULE_DIR$/SSM-All-ch17/WebContent" relative="/" />
         </webroots>
         <sourceRoots>
+          <root url="file://$MODULE_DIR$/104-springmvc-demo/src" />
+          <root url="file://$MODULE_DIR$/104-springmvc-demo/web" />
           <root url="file://$MODULE_DIR$/src/main/java" />
           <root url="file://$MODULE_DIR$/src/main/resources" />
         </sourceRoots>
