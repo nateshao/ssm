@@ -16,13 +16,13 @@
         <module name="002-spring-ioc" />
         <module name="115-mybatis-associated-one-many" />
         <module name="001-spring-hello" />
-        <module name="112-mybatis-hello" />
+        <module name="010-mybatis-demo" />
         <module name="101-spring-ioc-di" />
         <module name="103-spring-aop" />
         <module name="102-spring-bean" />
         <module name="105-spring-transaction" />
         <module name="104-spring-jdbc" />
-        <module name="010-mybatis-demo" />
+        <module name="112-mybatis-hello" />
         <module name="003-spring-aop-schema-advise" />
         <module name="114-mybatis-dynamic-sql" />
         <module name="ssm-combine" />
