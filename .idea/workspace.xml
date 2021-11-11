@@ -25,24 +25,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5742f4cb-dc8d-4349-a22e-84f3ab4ed049" name="Default Changelist" comment="一对一，一对多，多对多映射">
-      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/src/main/java/com/nateshao/mybatis/MybatisApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/src/test/java/com/nateshao/mybatis/MybatisApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/4.2 Spring Boot集成MyBatis.pptx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/technical files/MyBatis_百度百科.mhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/technical files/Spring Boot 常用注解汇总.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/technical files/Starter pom.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/technical files/mybatis – MyBatis 3 _ Introduction.mhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/technical files/mybatis – MyBatis 3 _ 简介.mhtml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/technical files/springboot常用注解分类整理.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/~$4.2 Spring Boot集成MyBatis.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/实验4.2 Spring Boot集成MyBatis.docx" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/doc/4.3 Spring Boot事务支持.rar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/src/main/java/com/nateshao/mybatis/controller/StudentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/src/main/java/com/nateshao/mybatis/mapper/StudentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/src/main/java/com/nateshao/mybatis/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/src/main/java/com/nateshao/mybatis/service/StudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/src/main/resources/mapper/StudentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/src/test/java/com/nateshao/mybatis/mapper/StudentMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/011-mybatis-transaction/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/011-mybatis-transaction/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +45,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -107,7 +99,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/113-mybatis-detail/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/116-mybatis-spring/src/main/java/com/nateshao/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/011-mybatis-transaction/src/main/resources" />
     <property name="nodejs_interpreter_path" value="E:/nodejs/node" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -115,35 +107,36 @@
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.nateshao.instance.factory" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.nateshao.mybatis.mapper" />
       <recent name="com.nateshao.demo" />
       <recent name="com.nateshao.model" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.nateshao.cglib" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\GitHub--Gitee\ssm\116-mybatis-spring\src\main\java\com\nateshao\mapper" />
-      <recent name="F:\GitHub--Gitee\ssm\116-mybatis-spring\src\main\resources\mapper" />
-      <recent name="F:\GitHub--Gitee\ssm\116-mybatis-spring\src\main\resources" />
-      <recent name="F:\GitHub--Gitee\ssm\115-mybatis-associated-one-many\src\main\java\com\nateshao" />
-      <recent name="F:\GitHub--Gitee\ssm\115-mybatis-associated-one-many\src\main\resources\mapper" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\GitHub--Gitee\ssm\011-mybatis-transaction\src\main\resources\mapper" />
       <recent name="F:\GitHub--Gitee\ssm\116-mybatis-spring\src\main\resources\mapper" />
       <recent name="F:\GitHub--Gitee\ssm\112-mybatis-hello\src\main\resources" />
       <recent name="F:\GitHub--Gitee\ssm" />
       <recent name="F:\GitHub--Gitee\ssm\004-springmvc-hello\web\WEB-INF" />
-      <recent name="F:\GitHub--Gitee\ssm\103-spring-aop\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nateshao.cglib" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\GitHub--Gitee\ssm\011-mybatis-transaction\src\main\resources" />
+      <recent name="F:\GitHub--Gitee\ssm\011-mybatis-transaction\doc" />
+      <recent name="F:\GitHub--Gitee\ssm\116-mybatis-spring\src\main\java\com\nateshao\mapper" />
+      <recent name="F:\GitHub--Gitee\ssm\116-mybatis-spring\src\main\resources\mapper" />
+      <recent name="F:\GitHub--Gitee\ssm\116-mybatis-spring\src\main\resources" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.nateshao.instance.factory" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MybatisApplication">
+  <component name="RunManager" selected="JUnit.StudentMapperTest.addStudent">
     <configuration name="TransactionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nateshao.test.TransactionTest" />
       <module name="116-mybatis-spring" />
@@ -151,40 +144,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="116-mybatis-spring" />
-      <option name="PACKAGE_NAME" value="com.nateshao.test" />
-      <option name="MAIN_CLASS_NAME" value="com.nateshao.test.DaoTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DaoTest.findCustomerByIdDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="116-mybatis-spring" />
-      <option name="PACKAGE_NAME" value="com.nateshao.test" />
-      <option name="MAIN_CLASS_NAME" value="com.nateshao.test.DaoTest" />
-      <option name="METHOD_NAME" value="findCustomerByIdDaoTest" />
+    <configuration name="StudentMapperTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="011-mybatis-transaction" />
+      <option name="PACKAGE_NAME" value="com.nateshao.mybatis.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.nateshao.mybatis.mapper.StudentMapperTest" />
+      <option name="METHOD_NAME" value="add" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisAssociatedTest.findOrdersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="115-mybatis-associated-one-many" />
-      <option name="PACKAGE_NAME" value="com.nateshao.test" />
-      <option name="MAIN_CLASS_NAME" value="com.nateshao.test.MybatisAssociatedTest" />
-      <option name="METHOD_NAME" value="findOrdersTest" />
+    <configuration name="StudentMapperTest.addStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="011-mybatis-transaction" />
+      <option name="PACKAGE_NAME" value="com.nateshao.mybatis.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.nateshao.mybatis.mapper.StudentMapperTest" />
+      <option name="METHOD_NAME" value="addStudent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MybatisAssociatedTest.findUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="115-mybatis-associated-one-many" />
-      <option name="PACKAGE_NAME" value="com.nateshao.test" />
-      <option name="MAIN_CLASS_NAME" value="com.nateshao.test.MybatisAssociatedTest" />
-      <option name="METHOD_NAME" value="findUserTest" />
+    <configuration name="StudentMapperTest.queryStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="011-mybatis-transaction" />
+      <option name="PACKAGE_NAME" value="com.nateshao.mybatis.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.nateshao.mybatis.mapper.StudentMapperTest" />
+      <option name="METHOD_NAME" value="queryStudent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -193,6 +177,13 @@
     <configuration name="MyBatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.nateshao.mybatis.MyBatisApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="011-mybatis-transaction" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.nateshao.mybatis.MybatisApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -265,21 +256,21 @@
     </configuration>
     <list>
       <item itemvalue="Application.TransactionTest" />
-      <item itemvalue="JUnit.MybatisAssociatedTest.findUserTest" />
-      <item itemvalue="JUnit.MybatisAssociatedTest.findOrdersTest" />
-      <item itemvalue="JUnit.DaoTest.findCustomerByIdDaoTest" />
-      <item itemvalue="JUnit.DaoTest" />
       <item itemvalue="Spring Boot.MybatisApplication" />
       <item itemvalue="Spring Boot.MyBatisApplication" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.24" />
+      <item itemvalue="JUnit.StudentMapperTest.queryStudent" />
+      <item itemvalue="Spring Boot.MybatisApplication (1)" />
+      <item itemvalue="JUnit.StudentMapperTest.add" />
+      <item itemvalue="JUnit.StudentMapperTest.addStudent" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentMapperTest.addStudent" />
+        <item itemvalue="Spring Boot.MybatisApplication (1)" />
+        <item itemvalue="JUnit.StudentMapperTest.add" />
+        <item itemvalue="JUnit.StudentMapperTest.queryStudent" />
         <item itemvalue="Application.TransactionTest" />
-        <item itemvalue="JUnit.DaoTest" />
-        <item itemvalue="JUnit.DaoTest.findCustomerByIdDaoTest" />
-        <item itemvalue="JUnit.MybatisAssociatedTest.findOrdersTest" />
-        <item itemvalue="JUnit.MybatisAssociatedTest.findUserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -305,11 +296,15 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Spring-ioc" />
     <MESSAGE value="mybatis" />
-    <MESSAGE value="一对一，一对多，多对多映射" />
     <MESSAGE value="ssm" />
-    <option name="LAST_COMMIT_MESSAGE" value="ssm" />
+    <MESSAGE value="一对一，一对多，多对多映射" />
+    <option name="LAST_COMMIT_MESSAGE" value="一对一，一对多，多对多映射" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="395" y="91" key="#Inspections" timestamp="1636617264147">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="395" y="91" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1636617264147" />
     <state x="249" y="0" key="#Project_Structure" timestamp="1634345352284">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -346,38 +341,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1635129348216" />
-    <state width="1492" height="118" key="GridCell.Tab.0.bottom" timestamp="1636034981494">
+    <state width="1492" height="204" key="GridCell.Tab.0.bottom" timestamp="1636622163418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="118" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636034981494" />
-    <state width="1492" height="118" key="GridCell.Tab.0.center" timestamp="1636034981494">
+    <state width="1492" height="204" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636622163418" />
+    <state width="1492" height="204" key="GridCell.Tab.0.center" timestamp="1636622163418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="118" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1636034981494" />
-    <state width="1492" height="118" key="GridCell.Tab.0.left" timestamp="1636034981494">
+    <state width="1492" height="204" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1636622163418" />
+    <state width="1492" height="204" key="GridCell.Tab.0.left" timestamp="1636622163418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="118" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1636034981494" />
-    <state width="1492" height="118" key="GridCell.Tab.0.right" timestamp="1636034981494">
+    <state width="1492" height="204" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1636622163418" />
+    <state width="1492" height="204" key="GridCell.Tab.0.right" timestamp="1636622163418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="118" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1636034981494" />
-    <state width="1492" height="118" key="GridCell.Tab.1.bottom" timestamp="1636034981494">
+    <state width="1492" height="204" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1636622163418" />
+    <state width="1492" height="204" key="GridCell.Tab.1.bottom" timestamp="1636622163418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="118" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636034981494" />
-    <state width="1492" height="118" key="GridCell.Tab.1.center" timestamp="1636034981494">
+    <state width="1492" height="204" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636622163418" />
+    <state width="1492" height="204" key="GridCell.Tab.1.center" timestamp="1636622163418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="118" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1636034981494" />
-    <state width="1492" height="118" key="GridCell.Tab.1.left" timestamp="1636034981494">
+    <state width="1492" height="204" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1636622163418" />
+    <state width="1492" height="204" key="GridCell.Tab.1.left" timestamp="1636622163418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="118" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1636034981494" />
-    <state width="1492" height="118" key="GridCell.Tab.1.right" timestamp="1636034981494">
+    <state width="1492" height="204" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1636622163418" />
+    <state width="1492" height="204" key="GridCell.Tab.1.right" timestamp="1636622163418">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="118" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1636034981494" />
+    <state width="1492" height="204" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1636622163418" />
     <state width="1493" height="425" key="GridCell.Tab.2.bottom" timestamp="1632973340471">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -410,26 +405,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1635130957683" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1636034811083">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1636615021363">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1636034811083" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1636615021363" />
     <state x="565" y="190" key="chooseDestDirectoryDialog" timestamp="1634916424041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="565" y="190" key="chooseDestDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1634916424041" />
-    <state x="540" y="157" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1634297930007">
+    <state x="540" y="157" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1636617525266">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="540" y="157" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1634297930007" />
+    <state x="540" y="157" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1636617525266" />
     <state x="468" y="115" width="600" height="594" key="find.popup" timestamp="1635231631724">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="468" y="115" width="600" height="594" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1635231631724" />
-    <state x="364" y="0" width="1069" height="824" key="new project wizard" timestamp="1636032355223">
+    <state x="364" y="0" width="1069" height="824" key="new project wizard" timestamp="1636614901027">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="364" y="0" width="1069" height="824" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1636032355223" />
+    <state x="364" y="0" width="1069" height="824" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1636614901027" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1634294391517">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace表示命名空间 -->
+<mapper namespace="com.nateshao.mybatis.mapper.StudentMapper">
+
+    <select id="queryStudent" resultType="com.nateshao.mybatis.model.Student">
+        select * from student
+    </select>
+
+    <select id="queryStudentsById" parameterType="integer" resultType="com.nateshao.mybatis.model.Student">
+        select * from student where stuNo = #{stuNo}
+    </select>
+
+    <insert id="insertStudentById" parameterType="com.nateshao.mybatis.model.Student">
+        insert student(studName,stuNo,sex,nation,political,school,major,birthday,entranceTime)
+        values (#{studName},#{stuNo},#{sex},#{nation},#{political},#{school},#{major},#{birthday},#{entranceTime})
+    </insert>
+
+</mapper>
