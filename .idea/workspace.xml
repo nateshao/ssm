@@ -25,8 +25,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5742f4cb-dc8d-4349-a22e-84f3ab4ed049" name="Default Changelist" comment="一对一，一对多，多对多映射">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/src/main/java/com/nateshao/mybatis/MybatisApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/011-mybatis-transaction/src/test/java/com/nateshao/mybatis/MybatisApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/4.2 Spring Boot集成MyBatis.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/technical files/MyBatis_百度百科.mhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/technical files/Spring Boot 常用注解汇总.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/technical files/Starter pom.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/technical files/mybatis – MyBatis 3 _ Introduction.mhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/technical files/mybatis – MyBatis 3 _ 简介.mhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/technical files/springboot常用注解分类整理.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/~$4.2 Spring Boot集成MyBatis.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4.2 Spring Boot集成MyBatis/实验4.2 Spring Boot集成MyBatis.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -288,10 +304,10 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Spring-ioc" />
-    <MESSAGE value="ssm" />
     <MESSAGE value="mybatis" />
     <MESSAGE value="一对一，一对多，多对多映射" />
-    <option name="LAST_COMMIT_MESSAGE" value="一对一，一对多，多对多映射" />
+    <MESSAGE value="ssm" />
+    <option name="LAST_COMMIT_MESSAGE" value="ssm" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1634345352284">

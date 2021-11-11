@@ -8,14 +8,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="113-mybatis-detail" />
-        <module name="112-mybatis-hello" />
+        <module name="003-spring-injection" />
         <module name="010-mybatis-hello" />
         <module name="116-mybatis-spring" />
         <module name="demo" />
-        <module name="003-spring-injection" />
+        <module name="011-mybatis-transaction" />
         <module name="002-spring-ioc" />
         <module name="115-mybatis-associated-one-many" />
         <module name="001-spring-hello" />
+        <module name="112-mybatis-hello" />
         <module name="101-spring-ioc-di" />
         <module name="103-spring-aop" />
         <module name="102-spring-bean" />
@@ -32,6 +33,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="010-mybatis-demo" options="-parameters" />
+      <module name="011-mybatis-transaction" options="-parameters" />
       <module name="demo" options="-parameters" />
     </option>
   </component>
