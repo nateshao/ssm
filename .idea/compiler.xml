@@ -7,7 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="113-mybatis-detail" />
         <module name="003-spring-injection" />
         <module name="010-mybatis-hello" />
         <module name="116-mybatis-spring" />
@@ -15,15 +14,16 @@
         <module name="011-mybatis-transaction" />
         <module name="002-spring-ioc" />
         <module name="115-mybatis-associated-one-many" />
+        <module name="003-spring-aop-schema-advise" />
         <module name="001-spring-hello" />
-        <module name="010-mybatis-demo" />
+        <module name="112-mybatis-hello" />
         <module name="101-spring-ioc-di" />
         <module name="103-spring-aop" />
         <module name="102-spring-bean" />
         <module name="105-spring-transaction" />
         <module name="104-spring-jdbc" />
-        <module name="112-mybatis-hello" />
-        <module name="003-spring-aop-schema-advise" />
+        <module name="010-mybatis-demo" />
+        <module name="113-mybatis-detail" />
         <module name="114-mybatis-dynamic-sql" />
         <module name="ssm-combine" />
       </profile>
