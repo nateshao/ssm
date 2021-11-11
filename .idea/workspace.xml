@@ -24,7 +24,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5742f4cb-dc8d-4349-a22e-84f3ab4ed049" name="Default Changelist" comment="一对一，一对多，多对多映射" />
+    <list default="true" id="5742f4cb-dc8d-4349-a22e-84f3ab4ed049" name="Default Changelist" comment="一对一，一对多，多对多映射">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -250,9 +253,9 @@
       <item itemvalue="JUnit.MybatisAssociatedTest.findOrdersTest" />
       <item itemvalue="JUnit.DaoTest.findCustomerByIdDaoTest" />
       <item itemvalue="JUnit.DaoTest" />
-      <item itemvalue="Tomcat Server.Tomcat 8.5.24" />
       <item itemvalue="Spring Boot.MybatisApplication" />
       <item itemvalue="Spring Boot.MyBatisApplication" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.24" />
     </list>
     <recent_temporary>
       <list>
