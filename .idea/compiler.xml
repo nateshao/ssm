@@ -16,13 +16,14 @@
         <module name="115-mybatis-associated-one-many" />
         <module name="003-spring-aop-schema-advise" />
         <module name="001-spring-hello" />
-        <module name="112-mybatis-hello" />
+        <module name="220-boot-blog" />
+        <module name="010-mybatis-demo" />
         <module name="101-spring-ioc-di" />
         <module name="103-spring-aop" />
         <module name="102-spring-bean" />
         <module name="105-spring-transaction" />
         <module name="104-spring-jdbc" />
-        <module name="010-mybatis-demo" />
+        <module name="112-mybatis-hello" />
         <module name="113-mybatis-detail" />
         <module name="114-mybatis-dynamic-sql" />
         <module name="ssm-combine" />
@@ -34,6 +35,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="010-mybatis-demo" options="-parameters" />
       <module name="011-mybatis-transaction" options="-parameters" />
+      <module name="220-boot-blog" options="-parameters" />
       <module name="demo" options="-parameters" />
     </option>
   </component>
