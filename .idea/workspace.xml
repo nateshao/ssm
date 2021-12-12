@@ -25,220 +25,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5742f4cb-dc8d-4349-a22e-84f3ab4ed049" name="Default Changelist" comment="一对一，一对多，多对多映射">
-      <change afterPath="$PROJECT_DIR$/118-ssm-boot-crm/sql/boot_crm.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/java/com/nateshao/blog/BlogApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/application-jdbc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/application-mail.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/application-redis.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/i18n/logo.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/i18n/logo_en_US.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/i18n/logo_zh_CN.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/mapper/ArticleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/docker/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/docker/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/docker/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/docker/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/docker/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/docker/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/docker/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/docker/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/frmap/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/frmap/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/frmap/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/frmap/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/frmap/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/gomap/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/gomap/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/gomap/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/gomap/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/gomap/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/gomap/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/lambda/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/lambda/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/lambda/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/lambda/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/phmap/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/phmap/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/phmap/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/phmap/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/phmap/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/phmap/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/phpmap/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/phpmap/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/phpmap/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/phpmap/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/phpmap/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/roadmap/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/roadmap/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/roadmap/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/roadmap/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/article_img/roadmap/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/css/admin.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/css/amazeui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/css/amazeui.flat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/css/amazeui.flat.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/css/amazeui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/css/xcode.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/img/avatars.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/img/back.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/img/back2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/img/back3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/img/back_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/img/me.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/js/amazeui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/js/amazeui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/js/html5.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/js/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/js/respond.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/js/theme/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/js/theme/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/js/theme/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/js/theme/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/js/theme/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/assets/js/theme/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/css/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/css/sweetalert2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/images/attach.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/images/bg/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/images/bg/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/images/bg/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/images/bg/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/images/bg/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/images/small/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/js/article.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/js/base.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/js/headroom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/js/highlight.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/js/html5shiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/js/install.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/js/instantclick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/js/jquery.app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/js/respond.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/js/sweetalert2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/dropzone/4.3.0/min/basic.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/dropzone/4.3.0/min/dropzone.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/dropzone/4.3.0/min/dropzone.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/jquery-multi-select/img/switch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/jquery-multi-select/jquery.quicksearch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/jquery.steps/demo/css/jquery.steps.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/md/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/md/img/editor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/md/js/diff.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/md/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/md/js/jquery.scrollto.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/md/js/md.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/md/js/pagedown-extra.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/md/js/pagedown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/mditor/css/mditor.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/mditor/css/mditor.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/mditor/css/mditor.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/mditor/font/674f50d287a8c48dc19ba404d20fe713.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/mditor/font/912ec66d7572ff821749319396470bde.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/mditor/font/a48ac41620cd818c5020d0f4302489ff.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/mditor/font/af7ae505a9eed503f8b8e6982036873e.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/mditor/font/b06871f281fee6b241d60582ae9369b9.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/mditor/font/fee66e712a8a08eef5805a46892932ad.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/mditor/js/mditor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/mditor/js/mditor.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/mditor/js/mditor.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/mditor/js/mditor.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/multi-select/0.9.12/css/multi-select.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/multi-select/0.9.12/img/switch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/multi-select/0.9.12/js/jquery.multi-select.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2.dist.css/select2-bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2.dist.css/select2-spinner.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2.dist.css/select2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2.dist.css/select2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2.dist.css/select2x2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2/3.4.8/select2-bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2/3.4.8/select2-spinner.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2/3.4.8/select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2/3.4.8/select2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2/3.4.8/select2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2/3.4.8/select2_locale_zh-CN.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2/3.4.8/select2x2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2/dist/css/select2-bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2/dist/css/select2-spinner.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2/dist/css/select2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2/dist/css/select2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/select2/dist/css/select2x2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/tagsinput/jquery.tagsinput.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/tagsinput/jquery.tagsinput.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/to-markdown/3.1.0/to-markdown.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/back/plugins/toggles/toggles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/css/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/css/xcode.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/bg-ico.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/bloglogo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/17.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/18.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/19.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/20.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/21.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/22.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/23.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/24.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/25.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/img/rand/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/js/headroom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/js/highlight.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/static/user/js/instantclick.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/templates/back/article_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/templates/back/article_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/templates/back/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/templates/back/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/templates/back/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/templates/client/articleDetails.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/templates/client/comments.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/templates/client/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/templates/client/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/templates/client/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/templates/comm/error_403.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/templates/comm/error_404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/templates/comm/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/templates/comm/paging.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/main/resources/templates/comm/tale_comment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/220-boot-blog/src/test/java/com/nateshao/blog/BlogApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -304,7 +90,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/113-mybatis-detail/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/220-boot-blog/src/main/resources" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/swagger/springboot-swagger-demo1/pom.xml" />
     <property name="nodejs_interpreter_path" value="E:/nodejs/node" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -341,7 +127,7 @@
       <recent name="com.nateshao.instance.factory" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentMapperTest.addStudent">
+  <component name="RunManager" selected="JUnit.StudentMapperTest.queryStudent">
     <configuration name="TransactionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nateshao.test.TransactionTest" />
       <module name="116-mybatis-spring" />
@@ -479,10 +265,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StudentMapperTest.queryStudent" />
         <item itemvalue="JUnit.StudentMapperTest.addStudent" />
         <item itemvalue="Spring Boot.MybatisApplication (1)" />
         <item itemvalue="JUnit.StudentMapperTest.add" />
-        <item itemvalue="JUnit.StudentMapperTest.queryStudent" />
         <item itemvalue="Application.TransactionTest" />
       </list>
     </recent_temporary>
@@ -554,26 +340,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1635132751892" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1636641464651">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1636723899093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1636641464651" />
-    <state width="1492" height="471" key="GridCell.Tab.0.bottom" timestamp="1636640979803">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1636723899093" />
+    <state width="1492" height="305" key="GridCell.Tab.0.bottom" timestamp="1636940563989">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="471" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636640979803" />
-    <state width="1492" height="471" key="GridCell.Tab.0.center" timestamp="1636640979803">
+    <state width="1492" height="305" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1636940563989" />
+    <state width="1492" height="305" key="GridCell.Tab.0.center" timestamp="1636940563989">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="471" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1636640979803" />
-    <state width="1492" height="471" key="GridCell.Tab.0.left" timestamp="1636640979803">
+    <state width="1492" height="305" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1636940563989" />
+    <state width="1492" height="305" key="GridCell.Tab.0.left" timestamp="1636940563989">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="471" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1636640979803" />
-    <state width="1492" height="471" key="GridCell.Tab.0.right" timestamp="1636640979803">
+    <state width="1492" height="305" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1636940563989" />
+    <state width="1492" height="305" key="GridCell.Tab.0.right" timestamp="1636940563989">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="471" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1636640979803" />
+    <state width="1492" height="305" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1636940563989" />
     <state width="1492" height="204" key="GridCell.Tab.1.bottom" timestamp="1636640979800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -622,10 +408,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1635130957683" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1636644122129">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1636724171990">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1636644122129" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1636724171990" />
     <state x="565" y="190" key="chooseDestDirectoryDialog" timestamp="1634916424041">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

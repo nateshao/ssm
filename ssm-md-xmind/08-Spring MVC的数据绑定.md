@@ -4,6 +4,8 @@ create by 千羽 2021-10-12
 
 [TOC]
 
+![](http://mmbiz.qpic.cn/sz_mmbiz_jpg/icHiblwB4HdHyCZQw1PfUuyYBtc0V0CyhKrDB5O3xzhNKb9UBVQL2eZ2rJwLAv7Uqb9lxicMZojCu7DK60gTQg0HQ/0?wx_fmt=jpeg)
+
 > GitHub：https://github.com/nateshao/ssm/tree/master/108-springmvc-databind
 >
 > Gitee：https://gitee.com/nateshao/ssm/tree/master/108-springmvc-databind
